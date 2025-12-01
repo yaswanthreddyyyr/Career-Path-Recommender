@@ -96,7 +96,7 @@ def load_recommender():
 
 def render_header():
     """Render the page header."""
-    st.markdown('<h1 class="main-header">🚀 Smart Career Path Recommender</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">Smart Career Path Recommender</h1>', unsafe_allow_html=True)
     st.markdown(
         '<p class="sub-header">Discover your ideal career path with AI-powered recommendations</p>',
         unsafe_allow_html=True
@@ -105,7 +105,7 @@ def render_header():
 
 def render_sidebar():
     """Render the sidebar with user profile input."""
-    st.sidebar.header("👤 Your Profile")
+    st.sidebar.header("Your Profile")
     
     # Skills input
     st.sidebar.subheader("Skills")
@@ -166,7 +166,7 @@ def render_sidebar():
 
 def render_job_recommendations(recommender, profile, top_k=10):
     """Render job recommendations section."""
-    st.header("💼 Job Recommendations")
+    st.header("Job Recommendations")
     
     with st.spinner("Finding matching jobs..."):
         recommendations = recommender.recommend_jobs(profile, top_k=top_k)
@@ -200,11 +200,11 @@ def render_job_recommendations(recommender, profile, top_k=10):
                 st.write(f"**Description:** {rec.job.description}")
                 
                 if rec.job.location:
-                    st.write(f"📍 **Location:** {rec.job.location}")
+                    st.write(f"**Location:** {rec.job.location}")
                 if rec.job.salary_range:
-                    st.write(f"💰 **Salary:** {rec.job.salary_range}")
+                    st.write(f"**Salary:** {rec.job.salary_range}")
                 if rec.job.experience_level:
-                    st.write(f"📊 **Level:** {rec.job.experience_level}")
+                    st.write(f"**Level:** {rec.job.experience_level}")
             
             with col2:
                 # Similarity gauge
@@ -226,7 +226,7 @@ def render_job_recommendations(recommender, profile, top_k=10):
                 st.plotly_chart(fig, use_container_width=True)
             
             # Skills section
-            st.write("**✅ Matching Skills:**")
+            st.write("**Matching Skills:**")
             if rec.matching_skills:
                 for skill in rec.matching_skills:
                     st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
@@ -234,7 +234,7 @@ def render_job_recommendations(recommender, profile, top_k=10):
                 st.write("No direct skill matches")
             
             st.write("")
-            st.write("**❌ Skills to Develop:**")
+            st.write("**Skills to Develop:**")
             if rec.missing_skills:
                 for skill in rec.missing_skills:
                     st.markdown(f'<span class="skill-tag missing-skill-tag">{skill}</span>', unsafe_allow_html=True)
@@ -250,7 +250,7 @@ def render_skill_gap_analysis(recommender, profile, target_role):
         skill_gaps = recommender.analyze_skill_gaps(profile, target_role)
     
     if not skill_gaps:
-        st.success(f"🎉 Great news! You already have the skills needed for {target_role}!")
+        st.success(f"Great news! You already have the skills needed for {target_role}!")
         return
     
     # Summary
@@ -286,12 +286,12 @@ def render_skill_gap_analysis(recommender, profile, target_role):
     medium_priority = [g for g in skill_gaps if 0.3 <= g.importance < 0.7]
     
     with col1:
-        st.subheader("🔴 High Priority Skills")
+        st.subheader("High Priority Skills")
         for gap in high_priority[:5]:
             st.write(f"• **{gap.skill}** ({gap.category or 'General'})")
     
     with col2:
-        st.subheader("🟡 Medium Priority Skills")
+        st.subheader("Medium Priority Skills")
         for gap in medium_priority[:5]:
             st.write(f"• **{gap.skill}** ({gap.category or 'General'})")
     
@@ -300,7 +300,7 @@ def render_skill_gap_analysis(recommender, profile, target_role):
 
 def render_course_recommendations(recommender, skill_gaps, top_k=10):
     """Render course recommendations section."""
-    st.header("📚 Recommended Courses")
+    st.header("Recommended Courses")
     
     if not skill_gaps:
         st.info("Complete the skill gap analysis to get personalized course recommendations.")
@@ -345,7 +345,7 @@ def render_course_recommendations(recommender, skill_gaps, top_k=10):
 
 def render_career_path(recommender, current_role, target_role):
     """Render career path visualization."""
-    st.header("🛤️ Career Path")
+    st.header("Career Path")
     
     with st.spinner("Generating career path..."):
         career_path = recommender.get_career_path(current_role, target_role)
@@ -400,16 +400,16 @@ def render_career_path(recommender, current_role, target_role):
     st.plotly_chart(fig, use_container_width=True)
     
     # Current position indicator
-    st.write(f"📍 **Your Current Level:** {career_path.current_level}")
+    st.write(f"**Your Current Level:** {career_path.current_level}")
     
     # Recommended transitions
     if career_path.recommended_transitions:
-        st.subheader("🎯 Recommended Next Steps")
+        st.subheader("Recommended Next Steps")
         for i, transition in enumerate(career_path.recommended_transitions, 1):
             st.write(f"{i}. **{transition}**")
     
     # Detailed path nodes
-    st.subheader("📋 Career Path Details")
+    st.subheader("Career Path Details")
     for node in nodes:
         with st.expander(f"Level {node.level}: {node.role}"):
             st.write(f"**Average Experience:** {node.avg_years_experience:.0f} years")
@@ -420,7 +420,7 @@ def render_career_path(recommender, current_role, target_role):
 
 def render_market_insights(recommender):
     """Render market insights dashboard."""
-    st.header("📊 Market Insights")
+    st.header("Market Insights")
     
     jobs = recommender.get_all_jobs()
     if not jobs:
@@ -439,7 +439,7 @@ def render_market_insights(recommender):
     col1, col2 = st.columns(2)
     
     with col1:
-        st.subheader("🔥 Top Skills in Demand")
+        st.subheader("Top Skills in Demand")
         fig = px.bar(
             skills_df, 
             x="Count", 
@@ -514,11 +514,11 @@ def main():
     
     # Main content tabs
     tab1, tab2, tab3, tab4, tab5 = st.tabs([
-        "💼 Job Recommendations",
-        "🎯 Skill Gap Analysis",
-        "📚 Course Recommendations",
-        "🛤️ Career Path",
-        "📊 Market Insights"
+        "Job Recommendations",
+        "Skill Gap Analysis",
+        "Course Recommendations",
+        "Career Path",
+        "Market Insights"
     ])
     
     skill_gaps = None
@@ -541,18 +541,7 @@ def main():
     with tab5:
         render_market_insights(recommender)
     
-    # Footer
-    st.divider()
-    st.markdown(
-        """
-        <div style="text-align: center; color: #888; padding: 1rem;">
-            Built with ❤️ by Ubaid Khan Mohammed, Manoj Siva Sai Deepank & Yaswanth Yaradoddi
-            <br>
-            Information Storage and Retrieval Project | 2025
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+
 
 
 if __name__ == "__main__":
