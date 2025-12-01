@@ -1,336 +1,2805 @@
 [
   {
-    "id":"course_001",
-    "title":"Machine Learning Specialization",
-    "provider":"Coursera",
-    "description":"Learn machine learning from Andrew Ng. Covers supervised learning, unsupervised learning, and best practices.",
+    "id":"course_0001",
+    "title":"Advanced Microservices and SIEM",
+    "provider":"Udemy",
+    "description":"Learn Microservices from scratch. This course guides you through SIEM and Node.js with practical examples.",
     "skills_taught":[
-      "Machine Learning",
-      "Python",
-      "TensorFlow",
-      "Neural Networks"
+      "Microservices",
+      "SIEM",
+      "Node.js"
     ],
-    "difficulty":"Intermediate",
-    "duration":"3 months",
-    "url":"https:\/\/coursera.org\/ml-specialization",
+    "difficulty":"Beginner",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/1",
+    "rating":3.8
+  },
+  {
+    "id":"course_0002",
+    "title":"Professional Prototyping and SQL",
+    "provider":"Udacity",
+    "description":"Master Prototyping and SQL with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Prototyping",
+      "SQL"
+    ],
+    "difficulty":"Advanced",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/2",
     "rating":4.9
   },
   {
-    "id":"course_002",
-    "title":"Deep Learning Specialization",
-    "provider":"Coursera",
-    "description":"Master deep learning fundamentals. Build neural networks, CNNs, RNNs, and more.",
+    "id":"course_0003",
+    "title":"Advanced Risk Assessment and GCP",
+    "provider":"DataCamp",
+    "description":"Learn Risk Assessment from scratch. This course guides you through GCP and more with practical examples.",
     "skills_taught":[
-      "Deep Learning",
-      "TensorFlow",
-      "Neural Networks",
-      "Computer Vision",
-      "NLP"
+      "Risk Assessment",
+      "GCP"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/3",
+    "rating":4.9
+  },
+  {
+    "id":"course_0004",
+    "title":"Learn HTML\/CSS and Azure",
+    "provider":"DataCamp",
+    "description":"Advanced specialization in HTML\/CSS. Deep dive into Azure and master industry-standard tools.",
+    "skills_taught":[
+      "HTML\/CSS",
+      "Azure",
+      "Scikit-learn"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/4",
+    "rating":3.8
+  },
+  {
+    "id":"course_0005",
+    "title":"Advanced Penetration Testing and Java",
+    "provider":"Codecademy",
+    "description":"Become an expert in Penetration Testing with this intensive training. Includes hands-on labs using Java.",
+    "skills_taught":[
+      "Penetration Testing",
+      "Java"
     ],
     "difficulty":"Advanced",
-    "duration":"4 months",
-    "url":"https:\/\/coursera.org\/deep-learning",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/5",
     "rating":4.8
   },
   {
-    "id":"course_003",
-    "title":"Python for Data Science",
-    "provider":"edX",
-    "description":"Learn Python programming for data analysis. Covers pandas, numpy, and visualization.",
+    "id":"course_0006",
+    "title":"Learn Communication and JIRA",
+    "provider":"Udacity",
+    "description":"Master Communication and JIRA with this comprehensive course. Learn best practices and build real-world projects.",
     "skills_taught":[
-      "Python",
-      "Pandas",
-      "NumPy",
-      "Data Visualization",
-      "Matplotlib"
+      "Communication",
+      "JIRA",
+      "Adobe XD"
     ],
-    "difficulty":"Beginner",
-    "duration":"6 weeks",
-    "url":"https:\/\/edx.org\/python-data-science",
-    "rating":4.6
+    "difficulty":"Advanced",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/6",
+    "rating":4.3
   },
   {
-    "id":"course_004",
-    "title":"SQL for Data Analysis",
-    "provider":"Udacity",
-    "description":"Master SQL for querying databases. Learn joins, aggregations, and window functions.",
+    "id":"course_0007",
+    "title":"Mastering MLOps",
+    "provider":"Coursera",
+    "description":"This course covers the fundamentals of MLOps and advances to complex topics in industry tools. Perfect for beginners and intermediates.",
     "skills_taught":[
-      "SQL",
-      "Database Management",
-      "Data Analysis",
-      "PostgreSQL"
+      "MLOps"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/7",
+    "rating":4.9
+  },
+  {
+    "id":"course_0008",
+    "title":"Learn Communication and Wireframing",
+    "provider":"Udemy",
+    "description":"Become an expert in Communication with this intensive training. Includes hands-on labs using Wireframing.",
+    "skills_taught":[
+      "Communication",
+      "Wireframing"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/8",
+    "rating":3.5
+  },
+  {
+    "id":"course_0009",
+    "title":"Mastering API Design and Selenium",
+    "provider":"Coursera",
+    "description":"This course covers the fundamentals of API Design and advances to complex topics in Selenium. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "API Design",
+      "Selenium",
+      "CI\/CD"
+    ],
+    "difficulty":"Advanced",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/9",
+    "rating":4.5
+  },
+  {
+    "id":"course_0010",
+    "title":"Learn Microservices and Prototyping",
+    "provider":"Udemy",
+    "description":"Master Microservices and Prototyping with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Microservices",
+      "Prototyping"
+    ],
+    "difficulty":"Beginner",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/10",
+    "rating":3.5
+  },
+  {
+    "id":"course_0011",
+    "title":"Learn Java and HTML",
+    "provider":"DataCamp",
+    "description":"Become an expert in Java with this intensive training. Includes hands-on labs using HTML.",
+    "skills_taught":[
+      "Java",
+      "HTML",
+      "Responsive Design"
+    ],
+    "difficulty":"Beginner",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/11",
+    "rating":3.9
+  },
+  {
+    "id":"course_0012",
+    "title":"The Complete Guide to Automation",
+    "provider":"edX",
+    "description":"Learn Automation from scratch. This course guides you through industry tools and more with practical examples.",
+    "skills_taught":[
+      "Automation"
+    ],
+    "difficulty":"Advanced",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/12",
+    "rating":4.3
+  },
+  {
+    "id":"course_0013",
+    "title":"Introduction to Tableau and Cloud Computing",
+    "provider":"Udemy",
+    "description":"Master Tableau and Cloud Computing with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Tableau",
+      "Cloud Computing"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/13",
+    "rating":4.9
+  },
+  {
+    "id":"course_0014",
+    "title":"Introduction to GCP and React",
+    "provider":"edX",
+    "description":"Master GCP and React with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "GCP",
+      "React"
+    ],
+    "difficulty":"Advanced",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/14",
+    "rating":4.0
+  },
+  {
+    "id":"course_0015",
+    "title":"Learn Network Security and Pandas",
+    "provider":"Udemy",
+    "description":"Become an expert in Network Security with this intensive training. Includes hands-on labs using Pandas.",
+    "skills_taught":[
+      "Network Security",
+      "Pandas"
     ],
     "difficulty":"Beginner",
     "duration":"4 weeks",
-    "url":"https:\/\/udacity.com\/sql-data-analysis",
-    "rating":4.5
+    "url":"https:\/\/example.com\/courses\/15",
+    "rating":4.9
   },
   {
-    "id":"course_005",
-    "title":"AWS Cloud Practitioner",
-    "provider":"AWS",
-    "description":"Learn AWS cloud fundamentals. Prepare for the AWS Cloud Practitioner certification.",
+    "id":"course_0016",
+    "title":"Introduction to Risk Assessment and AWS",
+    "provider":"Codecademy",
+    "description":"Master Risk Assessment and AWS with this comprehensive course. Learn best practices and build real-world projects.",
     "skills_taught":[
-      "AWS",
-      "Cloud Computing",
-      "EC2",
-      "S3",
-      "IAM"
+      "Risk Assessment",
+      "AWS"
     ],
     "difficulty":"Beginner",
-    "duration":"6 weeks",
-    "url":"https:\/\/aws.amazon.com\/training",
-    "rating":4.7
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/16",
+    "rating":3.6
   },
   {
-    "id":"course_006",
-    "title":"Docker and Kubernetes",
-    "provider":"Udemy",
-    "description":"Learn containerization with Docker and orchestration with Kubernetes.",
-    "skills_taught":[
-      "Docker",
-      "Kubernetes",
-      "DevOps",
-      "Container Orchestration"
-    ],
-    "difficulty":"Intermediate",
-    "duration":"8 weeks",
-    "url":"https:\/\/udemy.com\/docker-kubernetes",
-    "rating":4.6
-  },
-  {
-    "id":"course_007",
-    "title":"React - The Complete Guide",
-    "provider":"Udemy",
-    "description":"Build modern web applications with React. Covers hooks, Redux, and Next.js.",
-    "skills_taught":[
-      "React",
-      "JavaScript",
-      "Redux",
-      "Next.js",
-      "Frontend Development"
-    ],
-    "difficulty":"Intermediate",
-    "duration":"10 weeks",
-    "url":"https:\/\/udemy.com\/react-complete-guide",
-    "rating":4.8
-  },
-  {
-    "id":"course_008",
-    "title":"Natural Language Processing",
-    "provider":"Coursera",
-    "description":"Learn NLP techniques including text classification, NER, and transformers.",
-    "skills_taught":[
-      "NLP",
-      "Python",
-      "Transformers",
-      "BERT",
-      "Text Processing"
-    ],
-    "difficulty":"Advanced",
-    "duration":"3 months",
-    "url":"https:\/\/coursera.org\/nlp-specialization",
-    "rating":4.7
-  },
-  {
-    "id":"course_009",
-    "title":"Statistics for Data Science",
+    "id":"course_0017",
+    "title":"Learn Data Analysis",
     "provider":"edX",
-    "description":"Master statistics fundamentals for data science. Covers probability, hypothesis testing, and regression.",
+    "description":"Advanced specialization in Data Analysis. Deep dive into industry tools and master industry-standard tools.",
     "skills_taught":[
-      "Statistics",
-      "Probability",
-      "Hypothesis Testing",
-      "Regression",
       "Data Analysis"
     ],
     "difficulty":"Intermediate",
-    "duration":"8 weeks",
-    "url":"https:\/\/edx.org\/statistics-data-science",
-    "rating":4.5
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/17",
+    "rating":4.8
   },
   {
-    "id":"course_010",
-    "title":"FastAPI Modern Python Web Development",
-    "provider":"Udemy",
-    "description":"Build fast APIs with Python and FastAPI. Learn async programming and API best practices.",
+    "id":"course_0018",
+    "title":"Professional System Design and Excel",
+    "provider":"DataCamp",
+    "description":"This course covers the fundamentals of System Design and advances to complex topics in Excel. Perfect for beginners and intermediates.",
     "skills_taught":[
-      "FastAPI",
-      "Python",
-      "REST APIs",
-      "Async Programming",
-      "Pydantic"
+      "System Design",
+      "Excel"
     ],
-    "difficulty":"Intermediate",
-    "duration":"6 weeks",
-    "url":"https:\/\/udemy.com\/fastapi",
+    "difficulty":"Beginner",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/18",
     "rating":4.7
   },
   {
-    "id":"course_011",
-    "title":"Data Engineering with Python",
+    "id":"course_0019",
+    "title":"Professional AWS",
     "provider":"DataCamp",
-    "description":"Learn to build data pipelines. Covers ETL, Airflow, and data warehousing.",
+    "description":"This course covers the fundamentals of AWS and advances to complex topics in industry tools. Perfect for beginners and intermediates.",
     "skills_taught":[
-      "Data Engineering",
-      "Python",
-      "Airflow",
-      "ETL",
-      "Data Pipelines"
+      "AWS"
+    ],
+    "difficulty":"Beginner",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/19",
+    "rating":4.0
+  },
+  {
+    "id":"course_0020",
+    "title":"The Complete Guide to Selenium and Sketch",
+    "provider":"Udacity",
+    "description":"Learn Selenium from scratch. This course guides you through Sketch and Azure with practical examples.",
+    "skills_taught":[
+      "Selenium",
+      "Sketch",
+      "Azure"
     ],
     "difficulty":"Intermediate",
-    "duration":"8 weeks",
-    "url":"https:\/\/datacamp.com\/data-engineering",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/20",
+    "rating":4.1
+  },
+  {
+    "id":"course_0021",
+    "title":"Professional Firewalls and HTML\/CSS",
+    "provider":"Udacity",
+    "description":"Master Firewalls and HTML\/CSS with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Firewalls",
+      "HTML\/CSS"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/21",
+    "rating":4.3
+  },
+  {
+    "id":"course_0022",
+    "title":"The Complete Guide to Redux",
+    "provider":"Codecademy",
+    "description":"Advanced specialization in Redux. Deep dive into industry tools and master industry-standard tools.",
+    "skills_taught":[
+      "Redux"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/22",
+    "rating":4.2
+  },
+  {
+    "id":"course_0023",
+    "title":"Introduction to Agile and Wireframing",
+    "provider":"Udemy",
+    "description":"Learn Agile from scratch. This course guides you through Wireframing and more with practical examples.",
+    "skills_taught":[
+      "Agile",
+      "Wireframing"
+    ],
+    "difficulty":"Beginner",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/23",
+    "rating":4.7
+  },
+  {
+    "id":"course_0024",
+    "title":"Advanced Jenkins and GCP",
+    "provider":"Pluralsight",
+    "description":"Learn Jenkins from scratch. This course guides you through GCP and more with practical examples.",
+    "skills_taught":[
+      "Jenkins",
+      "GCP"
+    ],
+    "difficulty":"Advanced",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/24",
     "rating":4.4
   },
   {
-    "id":"course_012",
-    "title":"Tableau for Data Visualization",
-    "provider":"Coursera",
-    "description":"Create impactful visualizations and dashboards with Tableau.",
+    "id":"course_0025",
+    "title":"Mastering SIEM and Java",
+    "provider":"DataCamp",
+    "description":"Learn SIEM from scratch. This course guides you through Java and GCP with practical examples.",
     "skills_taught":[
-      "Tableau",
-      "Data Visualization",
-      "Dashboard Design",
-      "Data Analysis"
+      "SIEM",
+      "Java",
+      "GCP"
     ],
-    "difficulty":"Beginner",
-    "duration":"4 weeks",
-    "url":"https:\/\/coursera.org\/tableau",
-    "rating":4.6
-  },
-  {
-    "id":"course_013",
-    "title":"Git and GitHub for Beginners",
-    "provider":"Udemy",
-    "description":"Learn version control with Git and collaboration with GitHub.",
-    "skills_taught":[
-      "Git",
-      "GitHub",
-      "Version Control",
-      "Collaboration"
-    ],
-    "difficulty":"Beginner",
-    "duration":"2 weeks",
-    "url":"https:\/\/udemy.com\/git-github",
-    "rating":4.5
-  },
-  {
-    "id":"course_014",
-    "title":"PyTorch for Deep Learning",
-    "provider":"Udacity",
-    "description":"Master PyTorch for building deep learning models. Covers CNNs, RNNs, and GANs.",
-    "skills_taught":[
-      "PyTorch",
-      "Deep Learning",
-      "Neural Networks",
-      "Computer Vision"
-    ],
-    "difficulty":"Advanced",
-    "duration":"3 months",
-    "url":"https:\/\/udacity.com\/pytorch",
+    "difficulty":"Intermediate",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/25",
     "rating":4.8
   },
   {
-    "id":"course_015",
-    "title":"Product Management Fundamentals",
-    "provider":"Coursera",
-    "description":"Learn product management skills. Covers roadmapping, user research, and agile.",
+    "id":"course_0026",
+    "title":"Mastering Ansible and Security",
+    "provider":"Pluralsight",
+    "description":"Master Ansible and Security with this comprehensive course. Learn best practices and build real-world projects.",
     "skills_taught":[
-      "Product Management",
-      "Agile",
-      "User Research",
-      "Roadmapping",
-      "Product Strategy"
+      "Ansible",
+      "Security",
+      "Leadership"
     ],
     "difficulty":"Beginner",
-    "duration":"6 weeks",
-    "url":"https:\/\/coursera.org\/product-management",
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/26",
+    "rating":4.4
+  },
+  {
+    "id":"course_0027",
+    "title":"Advanced Risk Assessment and HTML",
+    "provider":"Udacity",
+    "description":"Learn Risk Assessment from scratch. This course guides you through HTML and more with practical examples.",
+    "skills_taught":[
+      "Risk Assessment",
+      "HTML"
+    ],
+    "difficulty":"Beginner",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/27",
     "rating":4.5
   },
   {
-    "id":"course_016",
-    "title":"Apache Spark for Big Data",
+    "id":"course_0028",
+    "title":"The Complete Guide to Python and Automation",
     "provider":"edX",
-    "description":"Process big data with Apache Spark. Learn PySpark and distributed computing.",
+    "description":"Advanced specialization in Python. Deep dive into Automation and master industry-standard tools.",
     "skills_taught":[
-      "Spark",
-      "PySpark",
-      "Big Data",
-      "Distributed Computing",
-      "Data Processing"
+      "Python",
+      "Automation"
     ],
-    "difficulty":"Advanced",
-    "duration":"8 weeks",
-    "url":"https:\/\/edx.org\/apache-spark",
+    "difficulty":"Intermediate",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/28",
+    "rating":4.4
+  },
+  {
+    "id":"course_0029",
+    "title":"Advanced API Design and Automation",
+    "provider":"Udacity",
+    "description":"Master API Design and Automation with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "API Design",
+      "Automation"
+    ],
+    "difficulty":"Beginner",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/29",
     "rating":4.6
   },
   {
-    "id":"course_017",
-    "title":"Cybersecurity Fundamentals",
-    "provider":"Coursera",
-    "description":"Learn security fundamentals. Covers network security, cryptography, and threat analysis.",
+    "id":"course_0030",
+    "title":"Learn Machine Learning",
+    "provider":"Codecademy",
+    "description":"Advanced specialization in Machine Learning. Deep dive into industry tools and master industry-standard tools.",
+    "skills_taught":[
+      "Machine Learning"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/30",
+    "rating":4.8
+  },
+  {
+    "id":"course_0031",
+    "title":"Learn Security and Kubernetes",
+    "provider":"Pluralsight",
+    "description":"Learn Security from scratch. This course guides you through Kubernetes and more with practical examples.",
     "skills_taught":[
       "Security",
-      "Networking",
-      "Cryptography",
-      "Threat Analysis",
-      "Penetration Testing"
+      "Kubernetes"
     ],
-    "difficulty":"Intermediate",
-    "duration":"3 months",
-    "url":"https:\/\/coursera.org\/cybersecurity",
-    "rating":4.7
-  },
-  {
-    "id":"course_018",
-    "title":"Node.js Backend Development",
-    "provider":"Udemy",
-    "description":"Build scalable backend applications with Node.js. Covers Express, MongoDB, and REST APIs.",
-    "skills_taught":[
-      "Node.js",
-      "JavaScript",
-      "Express",
-      "MongoDB",
-      "REST APIs"
-    ],
-    "difficulty":"Intermediate",
+    "difficulty":"Beginner",
     "duration":"8 weeks",
-    "url":"https:\/\/udemy.com\/nodejs",
-    "rating":4.6
+    "url":"https:\/\/example.com\/courses\/31",
+    "rating":4.1
   },
   {
-    "id":"course_019",
-    "title":"MLOps: Machine Learning Operations",
-    "provider":"Coursera",
-    "description":"Learn to deploy and manage ML models in production. Covers CI\/CD for ML.",
+    "id":"course_0032",
+    "title":"Advanced JavaScript and Risk Assessment",
+    "provider":"Udemy",
+    "description":"This course covers the fundamentals of JavaScript and advances to complex topics in Risk Assessment. Perfect for beginners and intermediates.",
     "skills_taught":[
-      "MLOps",
-      "Machine Learning",
-      "Docker",
-      "Kubernetes",
-      "Model Deployment"
+      "JavaScript",
+      "Risk Assessment",
+      "Ansible"
     ],
     "difficulty":"Advanced",
-    "duration":"3 months",
-    "url":"https:\/\/coursera.org\/mlops",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/32",
     "rating":4.7
   },
   {
-    "id":"course_020",
-    "title":"Power BI for Business Intelligence",
-    "provider":"Microsoft Learn",
-    "description":"Create interactive reports and dashboards with Power BI.",
+    "id":"course_0033",
+    "title":"Introduction to GCP and Jenkins",
+    "provider":"Udemy",
+    "description":"Become an expert in GCP with this intensive training. Includes hands-on labs using Jenkins.",
+    "skills_taught":[
+      "GCP",
+      "Jenkins",
+      "Network Security"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/33",
+    "rating":4.0
+  },
+  {
+    "id":"course_0034",
+    "title":"Introduction to Agile",
+    "provider":"Coursera",
+    "description":"This course covers the fundamentals of Agile and advances to complex topics in industry tools. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Agile"
+    ],
+    "difficulty":"Beginner",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/34",
+    "rating":3.9
+  },
+  {
+    "id":"course_0035",
+    "title":"Advanced Power BI and Statistics",
+    "provider":"edX",
+    "description":"Advanced specialization in Power BI. Deep dive into Statistics and master industry-standard tools.",
     "skills_taught":[
       "Power BI",
+      "Statistics",
+      "REST APIs"
+    ],
+    "difficulty":"Beginner",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/35",
+    "rating":3.6
+  },
+  {
+    "id":"course_0036",
+    "title":"Learn Security and Risk Assessment",
+    "provider":"Udemy",
+    "description":"Master Security and Risk Assessment with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Security",
+      "Risk Assessment",
+      "Communication"
+    ],
+    "difficulty":"Beginner",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/36",
+    "rating":3.6
+  },
+  {
+    "id":"course_0037",
+    "title":"Introduction to JavaScript and Sketch",
+    "provider":"Udemy",
+    "description":"Learn JavaScript from scratch. This course guides you through Sketch and Data Analysis with practical examples.",
+    "skills_taught":[
+      "JavaScript",
+      "Sketch",
+      "Data Analysis"
+    ],
+    "difficulty":"Advanced",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/37",
+    "rating":3.9
+  },
+  {
+    "id":"course_0038",
+    "title":"Introduction to SIEM and React",
+    "provider":"edX",
+    "description":"Advanced specialization in SIEM. Deep dive into React and master industry-standard tools.",
+    "skills_taught":[
+      "SIEM",
+      "React",
+      "Penetration Testing"
+    ],
+    "difficulty":"Beginner",
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/38",
+    "rating":3.9
+  },
+  {
+    "id":"course_0039",
+    "title":"Professional PyTorch and Figma",
+    "provider":"Pluralsight",
+    "description":"Master PyTorch and Figma with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "PyTorch",
+      "Figma"
+    ],
+    "difficulty":"Beginner",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/39",
+    "rating":4.0
+  },
+  {
+    "id":"course_0040",
+    "title":"Advanced User Research",
+    "provider":"Pluralsight",
+    "description":"Become an expert in User Research with this intensive training. Includes hands-on labs using industry tools.",
+    "skills_taught":[
+      "User Research"
+    ],
+    "difficulty":"Beginner",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/40",
+    "rating":4.3
+  },
+  {
+    "id":"course_0041",
+    "title":"Learn Data Visualization and Git",
+    "provider":"DataCamp",
+    "description":"Advanced specialization in Data Visualization. Deep dive into Git and master industry-standard tools.",
+    "skills_taught":[
       "Data Visualization",
-      "Business Intelligence",
-      "DAX",
-      "Data Modeling"
+      "Git",
+      "Prototyping"
     ],
     "difficulty":"Intermediate",
     "duration":"6 weeks",
-    "url":"https:\/\/learn.microsoft.com\/power-bi",
+    "url":"https:\/\/example.com\/courses\/41",
+    "rating":4.7
+  },
+  {
+    "id":"course_0042",
+    "title":"The Complete Guide to SQL and Figma",
+    "provider":"Pluralsight",
+    "description":"Master SQL and Figma with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "SQL",
+      "Figma"
+    ],
+    "difficulty":"Advanced",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/42",
     "rating":4.6
+  },
+  {
+    "id":"course_0043",
+    "title":"Advanced Problem Solving",
+    "provider":"DataCamp",
+    "description":"Become an expert in Problem Solving with this intensive training. Includes hands-on labs using industry tools.",
+    "skills_taught":[
+      "Problem Solving"
+    ],
+    "difficulty":"Beginner",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/43",
+    "rating":3.8
+  },
+  {
+    "id":"course_0044",
+    "title":"Learn NoSQL and JavaScript",
+    "provider":"Udemy",
+    "description":"Master NoSQL and JavaScript with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "NoSQL",
+      "JavaScript"
+    ],
+    "difficulty":"Advanced",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/44",
+    "rating":4.5
+  },
+  {
+    "id":"course_0045",
+    "title":"Advanced NoSQL and Sketch",
+    "provider":"Udacity",
+    "description":"Learn NoSQL from scratch. This course guides you through Sketch and more with practical examples.",
+    "skills_taught":[
+      "NoSQL",
+      "Sketch"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/45",
+    "rating":4.9
+  },
+  {
+    "id":"course_0046",
+    "title":"Introduction to Docker and AWS",
+    "provider":"DataCamp",
+    "description":"Become an expert in Docker with this intensive training. Includes hands-on labs using AWS.",
+    "skills_taught":[
+      "Docker",
+      "AWS"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/46",
+    "rating":4.9
+  },
+  {
+    "id":"course_0047",
+    "title":"Mastering Security and CSS",
+    "provider":"DataCamp",
+    "description":"Learn Security from scratch. This course guides you through CSS and more with practical examples.",
+    "skills_taught":[
+      "Security",
+      "CSS"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/47",
+    "rating":3.8
+  },
+  {
+    "id":"course_0048",
+    "title":"Professional Python and GCP",
+    "provider":"Udacity",
+    "description":"Advanced specialization in Python. Deep dive into GCP and master industry-standard tools.",
+    "skills_taught":[
+      "Python",
+      "GCP"
+    ],
+    "difficulty":"Advanced",
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/48",
+    "rating":4.3
+  },
+  {
+    "id":"course_0049",
+    "title":"Mastering Statistics and TensorFlow",
+    "provider":"Coursera",
+    "description":"Learn Statistics from scratch. This course guides you through TensorFlow and more with practical examples.",
+    "skills_taught":[
+      "Statistics",
+      "TensorFlow"
+    ],
+    "difficulty":"Beginner",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/49",
+    "rating":3.9
+  },
+  {
+    "id":"course_0050",
+    "title":"Mastering Java and Adobe XD",
+    "provider":"Codecademy",
+    "description":"Advanced specialization in Java. Deep dive into Adobe XD and master industry-standard tools.",
+    "skills_taught":[
+      "Java",
+      "Adobe XD",
+      "MLOps"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/50",
+    "rating":3.5
+  },
+  {
+    "id":"course_0051",
+    "title":"Professional Tableau",
+    "provider":"Coursera",
+    "description":"This course covers the fundamentals of Tableau and advances to complex topics in industry tools. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Tableau"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/51",
+    "rating":4.1
+  },
+  {
+    "id":"course_0052",
+    "title":"Mastering Problem Solving and Product Strategy",
+    "provider":"Pluralsight",
+    "description":"Learn Problem Solving from scratch. This course guides you through Product Strategy and more with practical examples.",
+    "skills_taught":[
+      "Problem Solving",
+      "Product Strategy"
+    ],
+    "difficulty":"Advanced",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/52",
+    "rating":4.5
+  },
+  {
+    "id":"course_0053",
+    "title":"Mastering Java and Pandas",
+    "provider":"Udemy",
+    "description":"Advanced specialization in Java. Deep dive into Pandas and master industry-standard tools.",
+    "skills_taught":[
+      "Java",
+      "Pandas"
+    ],
+    "difficulty":"Beginner",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/53",
+    "rating":4.2
+  },
+  {
+    "id":"course_0054",
+    "title":"Professional User Research and Agile",
+    "provider":"Coursera",
+    "description":"Master User Research and Agile with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "User Research",
+      "Agile"
+    ],
+    "difficulty":"Advanced",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/54",
+    "rating":4.7
+  },
+  {
+    "id":"course_0055",
+    "title":"The Complete Guide to Prototyping and Microservices",
+    "provider":"Udemy",
+    "description":"Learn Prototyping from scratch. This course guides you through Microservices and Ansible with practical examples.",
+    "skills_taught":[
+      "Prototyping",
+      "Microservices",
+      "Ansible"
+    ],
+    "difficulty":"Beginner",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/55",
+    "rating":4.5
+  },
+  {
+    "id":"course_0056",
+    "title":"The Complete Guide to Azure and Prototyping",
+    "provider":"DataCamp",
+    "description":"Advanced specialization in Azure. Deep dive into Prototyping and master industry-standard tools.",
+    "skills_taught":[
+      "Azure",
+      "Prototyping",
+      "MLOps"
+    ],
+    "difficulty":"Beginner",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/56",
+    "rating":4.6
+  },
+  {
+    "id":"course_0057",
+    "title":"Mastering JIRA",
+    "provider":"Pluralsight",
+    "description":"Learn JIRA from scratch. This course guides you through industry tools and more with practical examples.",
+    "skills_taught":[
+      "JIRA"
+    ],
+    "difficulty":"Advanced",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/57",
+    "rating":4.2
+  },
+  {
+    "id":"course_0058",
+    "title":"Mastering Tableau and API Design",
+    "provider":"edX",
+    "description":"Master Tableau and API Design with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Tableau",
+      "API Design"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/58",
+    "rating":4.5
+  },
+  {
+    "id":"course_0059",
+    "title":"Professional JavaScript",
+    "provider":"edX",
+    "description":"Master JavaScript and industry tools with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "JavaScript"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/59",
+    "rating":4.2
+  },
+  {
+    "id":"course_0060",
+    "title":"The Complete Guide to GCP and Cloud Computing",
+    "provider":"Pluralsight",
+    "description":"Become an expert in GCP with this intensive training. Includes hands-on labs using Cloud Computing.",
+    "skills_taught":[
+      "GCP",
+      "Cloud Computing"
+    ],
+    "difficulty":"Advanced",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/60",
+    "rating":4.6
+  },
+  {
+    "id":"course_0061",
+    "title":"Mastering HTML\/CSS and Prototyping",
+    "provider":"Udemy",
+    "description":"This course covers the fundamentals of HTML\/CSS and advances to complex topics in Prototyping. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "HTML\/CSS",
+      "Prototyping"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/61",
+    "rating":4.2
+  },
+  {
+    "id":"course_0062",
+    "title":"Mastering Scikit-learn and Java",
+    "provider":"Pluralsight",
+    "description":"This course covers the fundamentals of Scikit-learn and advances to complex topics in Java. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Scikit-learn",
+      "Java"
+    ],
+    "difficulty":"Advanced",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/62",
+    "rating":4.4
+  },
+  {
+    "id":"course_0063",
+    "title":"Advanced AWS",
+    "provider":"Udacity",
+    "description":"Master AWS and industry tools with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "AWS"
+    ],
+    "difficulty":"Beginner",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/63",
+    "rating":4.2
+  },
+  {
+    "id":"course_0064",
+    "title":"The Complete Guide to Microservices",
+    "provider":"Pluralsight",
+    "description":"Become an expert in Microservices with this intensive training. Includes hands-on labs using industry tools.",
+    "skills_taught":[
+      "Microservices"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/64",
+    "rating":4.7
+  },
+  {
+    "id":"course_0065",
+    "title":"Mastering Redux",
+    "provider":"Udemy",
+    "description":"This course covers the fundamentals of Redux and advances to complex topics in industry tools. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Redux"
+    ],
+    "difficulty":"Advanced",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/65",
+    "rating":3.9
+  },
+  {
+    "id":"course_0066",
+    "title":"Mastering Figma and Prototyping",
+    "provider":"DataCamp",
+    "description":"Advanced specialization in Figma. Deep dive into Prototyping and master industry-standard tools.",
+    "skills_taught":[
+      "Figma",
+      "Prototyping"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/66",
+    "rating":4.3
+  },
+  {
+    "id":"course_0067",
+    "title":"Introduction to Firewalls and NoSQL",
+    "provider":"Coursera",
+    "description":"Master Firewalls and NoSQL with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Firewalls",
+      "NoSQL"
+    ],
+    "difficulty":"Advanced",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/67",
+    "rating":3.8
+  },
+  {
+    "id":"course_0068",
+    "title":"The Complete Guide to HTML\/CSS",
+    "provider":"Udacity",
+    "description":"This course covers the fundamentals of HTML\/CSS and advances to complex topics in industry tools. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "HTML\/CSS"
+    ],
+    "difficulty":"Advanced",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/68",
+    "rating":3.6
+  },
+  {
+    "id":"course_0069",
+    "title":"Mastering Problem Solving and Excel",
+    "provider":"Udemy",
+    "description":"Learn Problem Solving from scratch. This course guides you through Excel and more with practical examples.",
+    "skills_taught":[
+      "Problem Solving",
+      "Excel"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/69",
+    "rating":3.8
+  },
+  {
+    "id":"course_0070",
+    "title":"Learn Terraform and Prototyping",
+    "provider":"Udemy",
+    "description":"Master Terraform and Prototyping with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Terraform",
+      "Prototyping",
+      "System Design"
+    ],
+    "difficulty":"Advanced",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/70",
+    "rating":4.4
+  },
+  {
+    "id":"course_0071",
+    "title":"Introduction to Selenium and Communication",
+    "provider":"Udacity",
+    "description":"Learn Selenium from scratch. This course guides you through Communication and more with practical examples.",
+    "skills_taught":[
+      "Selenium",
+      "Communication"
+    ],
+    "difficulty":"Beginner",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/71",
+    "rating":4.9
+  },
+  {
+    "id":"course_0072",
+    "title":"Professional Scikit-learn and User Research",
+    "provider":"Udacity",
+    "description":"Master Scikit-learn and User Research with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Scikit-learn",
+      "User Research",
+      "Agile"
+    ],
+    "difficulty":"Beginner",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/72",
+    "rating":3.8
+  },
+  {
+    "id":"course_0073",
+    "title":"Learn PyTorch and REST APIs",
+    "provider":"Codecademy",
+    "description":"Become an expert in PyTorch with this intensive training. Includes hands-on labs using REST APIs.",
+    "skills_taught":[
+      "PyTorch",
+      "REST APIs",
+      "Network Security"
+    ],
+    "difficulty":"Beginner",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/73",
+    "rating":3.9
+  },
+  {
+    "id":"course_0074",
+    "title":"Professional CI\/CD",
+    "provider":"Udemy",
+    "description":"Advanced specialization in CI\/CD. Deep dive into industry tools and master industry-standard tools.",
+    "skills_taught":[
+      "CI\/CD"
+    ],
+    "difficulty":"Advanced",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/74",
+    "rating":4.2
+  },
+  {
+    "id":"course_0075",
+    "title":"The Complete Guide to SQL and Linux",
+    "provider":"edX",
+    "description":"Learn SQL from scratch. This course guides you through Linux and Networking with practical examples.",
+    "skills_taught":[
+      "SQL",
+      "Linux",
+      "Networking"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/75",
+    "rating":4.5
+  },
+  {
+    "id":"course_0076",
+    "title":"Introduction to AWS",
+    "provider":"edX",
+    "description":"Master AWS and industry tools with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "AWS"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/76",
+    "rating":4.0
+  },
+  {
+    "id":"course_0077",
+    "title":"Learn Scripting",
+    "provider":"Udemy",
+    "description":"Learn Scripting from scratch. This course guides you through industry tools and more with practical examples.",
+    "skills_taught":[
+      "Scripting"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/77",
+    "rating":3.8
+  },
+  {
+    "id":"course_0078",
+    "title":"Advanced Responsive Design and Machine Learning",
+    "provider":"Udemy",
+    "description":"Advanced specialization in Responsive Design. Deep dive into Machine Learning and master industry-standard tools.",
+    "skills_taught":[
+      "Responsive Design",
+      "Machine Learning",
+      "Networking"
+    ],
+    "difficulty":"Advanced",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/78",
+    "rating":3.6
+  },
+  {
+    "id":"course_0079",
+    "title":"Mastering JIRA and Leadership",
+    "provider":"Coursera",
+    "description":"This course covers the fundamentals of JIRA and advances to complex topics in Leadership. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "JIRA",
+      "Leadership"
+    ],
+    "difficulty":"Advanced",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/79",
+    "rating":4.3
+  },
+  {
+    "id":"course_0080",
+    "title":"Learn Terraform and Product Strategy",
+    "provider":"edX",
+    "description":"Advanced specialization in Terraform. Deep dive into Product Strategy and master industry-standard tools.",
+    "skills_taught":[
+      "Terraform",
+      "Product Strategy",
+      "Problem Solving"
+    ],
+    "difficulty":"Beginner",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/80",
+    "rating":5.0
+  },
+  {
+    "id":"course_0081",
+    "title":"Mastering Redux",
+    "provider":"Codecademy",
+    "description":"Learn Redux from scratch. This course guides you through industry tools and more with practical examples.",
+    "skills_taught":[
+      "Redux"
+    ],
+    "difficulty":"Advanced",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/81",
+    "rating":3.5
+  },
+  {
+    "id":"course_0082",
+    "title":"Professional Ansible and React",
+    "provider":"Coursera",
+    "description":"Advanced specialization in Ansible. Deep dive into React and master industry-standard tools.",
+    "skills_taught":[
+      "Ansible",
+      "React"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/82",
+    "rating":4.0
+  },
+  {
+    "id":"course_0083",
+    "title":"Advanced Tableau and TypeScript",
+    "provider":"Udemy",
+    "description":"Become an expert in Tableau with this intensive training. Includes hands-on labs using TypeScript.",
+    "skills_taught":[
+      "Tableau",
+      "TypeScript",
+      "Machine Learning"
+    ],
+    "difficulty":"Advanced",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/83",
+    "rating":4.9
+  },
+  {
+    "id":"course_0084",
+    "title":"Introduction to Wireframing and Scikit-learn",
+    "provider":"Coursera",
+    "description":"Advanced specialization in Wireframing. Deep dive into Scikit-learn and master industry-standard tools.",
+    "skills_taught":[
+      "Wireframing",
+      "Scikit-learn",
+      "Data Analysis"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/84",
+    "rating":4.9
+  },
+  {
+    "id":"course_0085",
+    "title":"Advanced Leadership",
+    "provider":"edX",
+    "description":"Master Leadership and industry tools with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Leadership"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/85",
+    "rating":3.8
+  },
+  {
+    "id":"course_0086",
+    "title":"Professional Product Strategy and Prototyping",
+    "provider":"Coursera",
+    "description":"Master Product Strategy and Prototyping with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Product Strategy",
+      "Prototyping",
+      "Terraform"
+    ],
+    "difficulty":"Advanced",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/86",
+    "rating":3.6
+  },
+  {
+    "id":"course_0087",
+    "title":"Advanced Java and Adobe XD",
+    "provider":"Udacity",
+    "description":"This course covers the fundamentals of Java and advances to complex topics in Adobe XD. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Java",
+      "Adobe XD"
+    ],
+    "difficulty":"Beginner",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/87",
+    "rating":4.7
+  },
+  {
+    "id":"course_0088",
+    "title":"Mastering HTML and System Design",
+    "provider":"Pluralsight",
+    "description":"Master HTML and System Design with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "HTML",
+      "System Design",
+      "CI\/CD"
+    ],
+    "difficulty":"Beginner",
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/88",
+    "rating":4.4
+  },
+  {
+    "id":"course_0089",
+    "title":"Introduction to Scikit-learn",
+    "provider":"Udemy",
+    "description":"Master Scikit-learn and industry tools with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Scikit-learn"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/89",
+    "rating":4.9
+  },
+  {
+    "id":"course_0090",
+    "title":"Learn Security and Figma",
+    "provider":"Udemy",
+    "description":"Master Security and Figma with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Security",
+      "Figma",
+      "Machine Learning"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/90",
+    "rating":4.7
+  },
+  {
+    "id":"course_0091",
+    "title":"Professional Product Strategy and Terraform",
+    "provider":"Codecademy",
+    "description":"Master Product Strategy and Terraform with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Product Strategy",
+      "Terraform",
+      "Adobe XD"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/91",
+    "rating":4.3
+  },
+  {
+    "id":"course_0092",
+    "title":"The Complete Guide to Leadership",
+    "provider":"Codecademy",
+    "description":"Become an expert in Leadership with this intensive training. Includes hands-on labs using industry tools.",
+    "skills_taught":[
+      "Leadership"
+    ],
+    "difficulty":"Advanced",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/92",
+    "rating":4.7
+  },
+  {
+    "id":"course_0093",
+    "title":"The Complete Guide to Prototyping",
+    "provider":"DataCamp",
+    "description":"Advanced specialization in Prototyping. Deep dive into industry tools and master industry-standard tools.",
+    "skills_taught":[
+      "Prototyping"
+    ],
+    "difficulty":"Beginner",
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/93",
+    "rating":3.8
+  },
+  {
+    "id":"course_0094",
+    "title":"The Complete Guide to Adobe XD and Data Visualization",
+    "provider":"edX",
+    "description":"Advanced specialization in Adobe XD. Deep dive into Data Visualization and master industry-standard tools.",
+    "skills_taught":[
+      "Adobe XD",
+      "Data Visualization",
+      "Docker"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/94",
+    "rating":4.9
+  },
+  {
+    "id":"course_0095",
+    "title":"Introduction to CSS and TypeScript",
+    "provider":"edX",
+    "description":"Advanced specialization in CSS. Deep dive into TypeScript and master industry-standard tools.",
+    "skills_taught":[
+      "CSS",
+      "TypeScript",
+      "API Design"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/95",
+    "rating":3.9
+  },
+  {
+    "id":"course_0096",
+    "title":"The Complete Guide to Automation and TensorFlow",
+    "provider":"Pluralsight",
+    "description":"Learn Automation from scratch. This course guides you through TensorFlow and more with practical examples.",
+    "skills_taught":[
+      "Automation",
+      "TensorFlow"
+    ],
+    "difficulty":"Beginner",
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/96",
+    "rating":4.8
+  },
+  {
+    "id":"course_0097",
+    "title":"Mastering Data Analysis and Figma",
+    "provider":"Coursera",
+    "description":"This course covers the fundamentals of Data Analysis and advances to complex topics in Figma. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Data Analysis",
+      "Figma"
+    ],
+    "difficulty":"Advanced",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/97",
+    "rating":4.6
+  },
+  {
+    "id":"course_0098",
+    "title":"Introduction to Wireframing",
+    "provider":"Codecademy",
+    "description":"Advanced specialization in Wireframing. Deep dive into industry tools and master industry-standard tools.",
+    "skills_taught":[
+      "Wireframing"
+    ],
+    "difficulty":"Advanced",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/98",
+    "rating":4.8
+  },
+  {
+    "id":"course_0099",
+    "title":"The Complete Guide to Machine Learning and Risk Assessment",
+    "provider":"Udemy",
+    "description":"Master Machine Learning and Risk Assessment with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Machine Learning",
+      "Risk Assessment",
+      "User Research"
+    ],
+    "difficulty":"Advanced",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/99",
+    "rating":4.3
+  },
+  {
+    "id":"course_0100",
+    "title":"Learn JIRA and TensorFlow",
+    "provider":"Pluralsight",
+    "description":"This course covers the fundamentals of JIRA and advances to complex topics in TensorFlow. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "JIRA",
+      "TensorFlow",
+      "Azure"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/100",
+    "rating":4.4
+  },
+  {
+    "id":"course_0101",
+    "title":"Introduction to AWS and Power BI",
+    "provider":"Udemy",
+    "description":"Learn AWS from scratch. This course guides you through Power BI and Responsive Design with practical examples.",
+    "skills_taught":[
+      "AWS",
+      "Power BI",
+      "Responsive Design"
+    ],
+    "difficulty":"Advanced",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/101",
+    "rating":4.0
+  },
+  {
+    "id":"course_0102",
+    "title":"Professional Redux",
+    "provider":"Udemy",
+    "description":"Master Redux and industry tools with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Redux"
+    ],
+    "difficulty":"Beginner",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/102",
+    "rating":4.5
+  },
+  {
+    "id":"course_0103",
+    "title":"Mastering Product Strategy",
+    "provider":"edX",
+    "description":"Learn Product Strategy from scratch. This course guides you through industry tools and more with practical examples.",
+    "skills_taught":[
+      "Product Strategy"
+    ],
+    "difficulty":"Advanced",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/103",
+    "rating":4.0
+  },
+  {
+    "id":"course_0104",
+    "title":"Introduction to Firewalls and Tableau",
+    "provider":"Coursera",
+    "description":"Become an expert in Firewalls with this intensive training. Includes hands-on labs using Tableau.",
+    "skills_taught":[
+      "Firewalls",
+      "Tableau",
+      "SIEM"
+    ],
+    "difficulty":"Beginner",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/104",
+    "rating":3.6
+  },
+  {
+    "id":"course_0105",
+    "title":"Advanced Power BI and MLOps",
+    "provider":"edX",
+    "description":"Become an expert in Power BI with this intensive training. Includes hands-on labs using MLOps.",
+    "skills_taught":[
+      "Power BI",
+      "MLOps",
+      "API Design"
+    ],
+    "difficulty":"Beginner",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/105",
+    "rating":3.9
+  },
+  {
+    "id":"course_0106",
+    "title":"The Complete Guide to Roadmapping and MLOps",
+    "provider":"Udacity",
+    "description":"This course covers the fundamentals of Roadmapping and advances to complex topics in MLOps. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Roadmapping",
+      "MLOps"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/106",
+    "rating":4.0
+  },
+  {
+    "id":"course_0107",
+    "title":"Advanced Docker and NoSQL",
+    "provider":"Codecademy",
+    "description":"Become an expert in Docker with this intensive training. Includes hands-on labs using NoSQL.",
+    "skills_taught":[
+      "Docker",
+      "NoSQL"
+    ],
+    "difficulty":"Beginner",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/107",
+    "rating":4.2
+  },
+  {
+    "id":"course_0108",
+    "title":"The Complete Guide to Problem Solving",
+    "provider":"edX",
+    "description":"Learn Problem Solving from scratch. This course guides you through industry tools and more with practical examples.",
+    "skills_taught":[
+      "Problem Solving"
+    ],
+    "difficulty":"Beginner",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/108",
+    "rating":4.0
+  },
+  {
+    "id":"course_0109",
+    "title":"The Complete Guide to Jenkins and Statistics",
+    "provider":"Codecademy",
+    "description":"Become an expert in Jenkins with this intensive training. Includes hands-on labs using Statistics.",
+    "skills_taught":[
+      "Jenkins",
+      "Statistics",
+      "User Research"
+    ],
+    "difficulty":"Advanced",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/109",
+    "rating":3.7
+  },
+  {
+    "id":"course_0110",
+    "title":"Introduction to React and Selenium",
+    "provider":"Udemy",
+    "description":"Learn React from scratch. This course guides you through Selenium and Firewalls with practical examples.",
+    "skills_taught":[
+      "React",
+      "Selenium",
+      "Firewalls"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/110",
+    "rating":3.6
+  },
+  {
+    "id":"course_0111",
+    "title":"Mastering NoSQL and Communication",
+    "provider":"Coursera",
+    "description":"Learn NoSQL from scratch. This course guides you through Communication and System Design with practical examples.",
+    "skills_taught":[
+      "NoSQL",
+      "Communication",
+      "System Design"
+    ],
+    "difficulty":"Beginner",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/111",
+    "rating":4.0
+  },
+  {
+    "id":"course_0112",
+    "title":"Mastering Adobe XD and Risk Assessment",
+    "provider":"Udemy",
+    "description":"Master Adobe XD and Risk Assessment with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Adobe XD",
+      "Risk Assessment",
+      "Jenkins"
+    ],
+    "difficulty":"Beginner",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/112",
+    "rating":4.6
+  },
+  {
+    "id":"course_0113",
+    "title":"Professional Communication and Azure",
+    "provider":"Codecademy",
+    "description":"Master Communication and Azure with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Communication",
+      "Azure",
+      "Python"
+    ],
+    "difficulty":"Beginner",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/113",
+    "rating":4.3
+  },
+  {
+    "id":"course_0114",
+    "title":"Mastering Linux",
+    "provider":"Udacity",
+    "description":"This course covers the fundamentals of Linux and advances to complex topics in industry tools. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Linux"
+    ],
+    "difficulty":"Beginner",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/114",
+    "rating":3.5
+  },
+  {
+    "id":"course_0115",
+    "title":"Learn User Research and Scripting",
+    "provider":"Codecademy",
+    "description":"Advanced specialization in User Research. Deep dive into Scripting and master industry-standard tools.",
+    "skills_taught":[
+      "User Research",
+      "Scripting"
+    ],
+    "difficulty":"Beginner",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/115",
+    "rating":4.8
+  },
+  {
+    "id":"course_0116",
+    "title":"The Complete Guide to CSS and Azure",
+    "provider":"Codecademy",
+    "description":"Learn CSS from scratch. This course guides you through Azure and more with practical examples.",
+    "skills_taught":[
+      "CSS",
+      "Azure"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/116",
+    "rating":4.5
+  },
+  {
+    "id":"course_0117",
+    "title":"Mastering Excel and Problem Solving",
+    "provider":"edX",
+    "description":"Learn Excel from scratch. This course guides you through Problem Solving and more with practical examples.",
+    "skills_taught":[
+      "Excel",
+      "Problem Solving"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/117",
+    "rating":3.6
+  },
+  {
+    "id":"course_0118",
+    "title":"Advanced Responsive Design",
+    "provider":"Codecademy",
+    "description":"Become an expert in Responsive Design with this intensive training. Includes hands-on labs using industry tools.",
+    "skills_taught":[
+      "Responsive Design"
+    ],
+    "difficulty":"Beginner",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/118",
+    "rating":4.5
+  },
+  {
+    "id":"course_0119",
+    "title":"Learn Machine Learning",
+    "provider":"Pluralsight",
+    "description":"This course covers the fundamentals of Machine Learning and advances to complex topics in industry tools. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Machine Learning"
+    ],
+    "difficulty":"Beginner",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/119",
+    "rating":4.6
+  },
+  {
+    "id":"course_0120",
+    "title":"The Complete Guide to MLOps and CSS",
+    "provider":"Codecademy",
+    "description":"Advanced specialization in MLOps. Deep dive into CSS and master industry-standard tools.",
+    "skills_taught":[
+      "MLOps",
+      "CSS",
+      "Statistics"
+    ],
+    "difficulty":"Beginner",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/120",
+    "rating":3.8
+  },
+  {
+    "id":"course_0121",
+    "title":"Mastering AWS and Azure",
+    "provider":"DataCamp",
+    "description":"This course covers the fundamentals of AWS and advances to complex topics in Azure. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "AWS",
+      "Azure"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/121",
+    "rating":4.6
+  },
+  {
+    "id":"course_0122",
+    "title":"The Complete Guide to Jenkins and API Design",
+    "provider":"Codecademy",
+    "description":"Master Jenkins and API Design with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Jenkins",
+      "API Design"
+    ],
+    "difficulty":"Beginner",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/122",
+    "rating":3.5
+  },
+  {
+    "id":"course_0123",
+    "title":"Introduction to Ansible and Redux",
+    "provider":"Coursera",
+    "description":"Advanced specialization in Ansible. Deep dive into Redux and master industry-standard tools.",
+    "skills_taught":[
+      "Ansible",
+      "Redux"
+    ],
+    "difficulty":"Beginner",
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/123",
+    "rating":4.4
+  },
+  {
+    "id":"course_0124",
+    "title":"Advanced Jenkins and Kubernetes",
+    "provider":"Coursera",
+    "description":"Advanced specialization in Jenkins. Deep dive into Kubernetes and master industry-standard tools.",
+    "skills_taught":[
+      "Jenkins",
+      "Kubernetes"
+    ],
+    "difficulty":"Beginner",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/124",
+    "rating":4.2
+  },
+  {
+    "id":"course_0125",
+    "title":"The Complete Guide to Selenium",
+    "provider":"edX",
+    "description":"This course covers the fundamentals of Selenium and advances to complex topics in industry tools. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Selenium"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/125",
+    "rating":3.8
+  },
+  {
+    "id":"course_0126",
+    "title":"Professional TypeScript and Power BI",
+    "provider":"DataCamp",
+    "description":"Master TypeScript and Power BI with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "TypeScript",
+      "Power BI"
+    ],
+    "difficulty":"Advanced",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/126",
+    "rating":5.0
+  },
+  {
+    "id":"course_0127",
+    "title":"Learn Roadmapping",
+    "provider":"Codecademy",
+    "description":"Become an expert in Roadmapping with this intensive training. Includes hands-on labs using industry tools.",
+    "skills_taught":[
+      "Roadmapping"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/127",
+    "rating":4.6
+  },
+  {
+    "id":"course_0128",
+    "title":"Mastering Automation",
+    "provider":"Udemy",
+    "description":"Become an expert in Automation with this intensive training. Includes hands-on labs using industry tools.",
+    "skills_taught":[
+      "Automation"
+    ],
+    "difficulty":"Advanced",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/128",
+    "rating":4.9
+  },
+  {
+    "id":"course_0129",
+    "title":"Professional Network Security",
+    "provider":"Pluralsight",
+    "description":"Master Network Security and industry tools with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Network Security"
+    ],
+    "difficulty":"Beginner",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/129",
+    "rating":3.8
+  },
+  {
+    "id":"course_0130",
+    "title":"Learn Penetration Testing and Firewalls",
+    "provider":"Coursera",
+    "description":"This course covers the fundamentals of Penetration Testing and advances to complex topics in Firewalls. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Penetration Testing",
+      "Firewalls",
+      "Ansible"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/130",
+    "rating":4.4
+  },
+  {
+    "id":"course_0131",
+    "title":"Learn User Research and Azure",
+    "provider":"Udacity",
+    "description":"Become an expert in User Research with this intensive training. Includes hands-on labs using Azure.",
+    "skills_taught":[
+      "User Research",
+      "Azure",
+      "Jenkins"
+    ],
+    "difficulty":"Beginner",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/131",
+    "rating":3.8
+  },
+  {
+    "id":"course_0132",
+    "title":"Advanced CI\/CD and Problem Solving",
+    "provider":"DataCamp",
+    "description":"Learn CI\/CD from scratch. This course guides you through Problem Solving and more with practical examples.",
+    "skills_taught":[
+      "CI\/CD",
+      "Problem Solving"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/132",
+    "rating":4.7
+  },
+  {
+    "id":"course_0133",
+    "title":"The Complete Guide to Java and Responsive Design",
+    "provider":"Coursera",
+    "description":"Learn Java from scratch. This course guides you through Responsive Design and more with practical examples.",
+    "skills_taught":[
+      "Java",
+      "Responsive Design"
+    ],
+    "difficulty":"Beginner",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/133",
+    "rating":3.8
+  },
+  {
+    "id":"course_0134",
+    "title":"Learn Scikit-learn",
+    "provider":"Udemy",
+    "description":"Advanced specialization in Scikit-learn. Deep dive into industry tools and master industry-standard tools.",
+    "skills_taught":[
+      "Scikit-learn"
+    ],
+    "difficulty":"Advanced",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/134",
+    "rating":4.4
+  },
+  {
+    "id":"course_0135",
+    "title":"The Complete Guide to Azure and Prototyping",
+    "provider":"edX",
+    "description":"Become an expert in Azure with this intensive training. Includes hands-on labs using Prototyping.",
+    "skills_taught":[
+      "Azure",
+      "Prototyping"
+    ],
+    "difficulty":"Advanced",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/135",
+    "rating":4.6
+  },
+  {
+    "id":"course_0136",
+    "title":"Advanced Adobe XD",
+    "provider":"Coursera",
+    "description":"Become an expert in Adobe XD with this intensive training. Includes hands-on labs using industry tools.",
+    "skills_taught":[
+      "Adobe XD"
+    ],
+    "difficulty":"Beginner",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/136",
+    "rating":4.6
+  },
+  {
+    "id":"course_0137",
+    "title":"The Complete Guide to NoSQL",
+    "provider":"Udacity",
+    "description":"Master NoSQL and industry tools with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "NoSQL"
+    ],
+    "difficulty":"Beginner",
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/137",
+    "rating":4.5
+  },
+  {
+    "id":"course_0138",
+    "title":"Advanced Terraform and Node.js",
+    "provider":"Udemy",
+    "description":"Master Terraform and Node.js with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Terraform",
+      "Node.js"
+    ],
+    "difficulty":"Advanced",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/138",
+    "rating":4.5
+  },
+  {
+    "id":"course_0139",
+    "title":"Learn Pandas",
+    "provider":"Codecademy",
+    "description":"Learn Pandas from scratch. This course guides you through industry tools and more with practical examples.",
+    "skills_taught":[
+      "Pandas"
+    ],
+    "difficulty":"Beginner",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/139",
+    "rating":4.0
+  },
+  {
+    "id":"course_0140",
+    "title":"The Complete Guide to Node.js and MLOps",
+    "provider":"Codecademy",
+    "description":"Become an expert in Node.js with this intensive training. Includes hands-on labs using MLOps.",
+    "skills_taught":[
+      "Node.js",
+      "MLOps",
+      "Jenkins"
+    ],
+    "difficulty":"Beginner",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/140",
+    "rating":4.3
+  },
+  {
+    "id":"course_0141",
+    "title":"Professional Statistics",
+    "provider":"Udemy",
+    "description":"Learn Statistics from scratch. This course guides you through industry tools and more with practical examples.",
+    "skills_taught":[
+      "Statistics"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/141",
+    "rating":4.7
+  },
+  {
+    "id":"course_0142",
+    "title":"Learn JavaScript",
+    "provider":"Pluralsight",
+    "description":"Become an expert in JavaScript with this intensive training. Includes hands-on labs using industry tools.",
+    "skills_taught":[
+      "JavaScript"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/142",
+    "rating":3.9
+  },
+  {
+    "id":"course_0143",
+    "title":"Advanced JavaScript and REST APIs",
+    "provider":"Udacity",
+    "description":"This course covers the fundamentals of JavaScript and advances to complex topics in REST APIs. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "JavaScript",
+      "REST APIs",
+      "Roadmapping"
+    ],
+    "difficulty":"Advanced",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/143",
+    "rating":4.8
+  },
+  {
+    "id":"course_0144",
+    "title":"The Complete Guide to Redux",
+    "provider":"Udacity",
+    "description":"Master Redux and industry tools with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Redux"
+    ],
+    "difficulty":"Advanced",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/144",
+    "rating":3.5
+  },
+  {
+    "id":"course_0145",
+    "title":"Professional REST APIs",
+    "provider":"Codecademy",
+    "description":"Advanced specialization in REST APIs. Deep dive into industry tools and master industry-standard tools.",
+    "skills_taught":[
+      "REST APIs"
+    ],
+    "difficulty":"Beginner",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/145",
+    "rating":4.0
+  },
+  {
+    "id":"course_0146",
+    "title":"Advanced Selenium",
+    "provider":"edX",
+    "description":"Master Selenium and industry tools with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Selenium"
+    ],
+    "difficulty":"Beginner",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/146",
+    "rating":3.9
+  },
+  {
+    "id":"course_0147",
+    "title":"Learn Java",
+    "provider":"Pluralsight",
+    "description":"Become an expert in Java with this intensive training. Includes hands-on labs using industry tools.",
+    "skills_taught":[
+      "Java"
+    ],
+    "difficulty":"Beginner",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/147",
+    "rating":3.7
+  },
+  {
+    "id":"course_0148",
+    "title":"Introduction to Adobe XD",
+    "provider":"Udemy",
+    "description":"Become an expert in Adobe XD with this intensive training. Includes hands-on labs using industry tools.",
+    "skills_taught":[
+      "Adobe XD"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/148",
+    "rating":3.7
+  },
+  {
+    "id":"course_0149",
+    "title":"Learn HTML\/CSS",
+    "provider":"Coursera",
+    "description":"Advanced specialization in HTML\/CSS. Deep dive into industry tools and master industry-standard tools.",
+    "skills_taught":[
+      "HTML\/CSS"
+    ],
+    "difficulty":"Beginner",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/149",
+    "rating":3.8
+  },
+  {
+    "id":"course_0150",
+    "title":"Advanced Communication and SQL",
+    "provider":"Pluralsight",
+    "description":"Master Communication and SQL with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Communication",
+      "SQL",
+      "Risk Assessment"
+    ],
+    "difficulty":"Advanced",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/150",
+    "rating":4.6
+  },
+  {
+    "id":"course_0151",
+    "title":"Mastering Firewalls and Azure",
+    "provider":"Udacity",
+    "description":"Learn Firewalls from scratch. This course guides you through Azure and more with practical examples.",
+    "skills_taught":[
+      "Firewalls",
+      "Azure"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/151",
+    "rating":3.8
+  },
+  {
+    "id":"course_0152",
+    "title":"Professional Security and Tableau",
+    "provider":"edX",
+    "description":"Advanced specialization in Security. Deep dive into Tableau and master industry-standard tools.",
+    "skills_taught":[
+      "Security",
+      "Tableau"
+    ],
+    "difficulty":"Beginner",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/152",
+    "rating":4.1
+  },
+  {
+    "id":"course_0153",
+    "title":"Mastering Microservices and Data Visualization",
+    "provider":"Pluralsight",
+    "description":"Become an expert in Microservices with this intensive training. Includes hands-on labs using Data Visualization.",
+    "skills_taught":[
+      "Microservices",
+      "Data Visualization",
+      "Security"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/153",
+    "rating":4.6
+  },
+  {
+    "id":"course_0154",
+    "title":"Advanced Communication and HTML\/CSS",
+    "provider":"DataCamp",
+    "description":"This course covers the fundamentals of Communication and advances to complex topics in HTML\/CSS. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Communication",
+      "HTML\/CSS"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/154",
+    "rating":3.6
+  },
+  {
+    "id":"course_0155",
+    "title":"Professional Git and Security",
+    "provider":"Coursera",
+    "description":"This course covers the fundamentals of Git and advances to complex topics in Security. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Git",
+      "Security",
+      "CI\/CD"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/155",
+    "rating":4.5
+  },
+  {
+    "id":"course_0156",
+    "title":"Advanced Docker and Testing",
+    "provider":"Pluralsight",
+    "description":"Advanced specialization in Docker. Deep dive into Testing and master industry-standard tools.",
+    "skills_taught":[
+      "Docker",
+      "Testing"
+    ],
+    "difficulty":"Advanced",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/156",
+    "rating":4.4
+  },
+  {
+    "id":"course_0157",
+    "title":"Advanced Adobe XD and Terraform",
+    "provider":"Udacity",
+    "description":"Master Adobe XD and Terraform with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Adobe XD",
+      "Terraform"
+    ],
+    "difficulty":"Beginner",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/157",
+    "rating":4.8
+  },
+  {
+    "id":"course_0158",
+    "title":"Mastering HTML and Linux",
+    "provider":"Udacity",
+    "description":"Advanced specialization in HTML. Deep dive into Linux and master industry-standard tools.",
+    "skills_taught":[
+      "HTML",
+      "Linux",
+      "Scripting"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/158",
+    "rating":4.7
+  },
+  {
+    "id":"course_0159",
+    "title":"Introduction to Data Analysis and Responsive Design",
+    "provider":"Pluralsight",
+    "description":"Advanced specialization in Data Analysis. Deep dive into Responsive Design and master industry-standard tools.",
+    "skills_taught":[
+      "Data Analysis",
+      "Responsive Design"
+    ],
+    "difficulty":"Advanced",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/159",
+    "rating":4.9
+  },
+  {
+    "id":"course_0160",
+    "title":"Advanced Kubernetes and Communication",
+    "provider":"Udacity",
+    "description":"Become an expert in Kubernetes with this intensive training. Includes hands-on labs using Communication.",
+    "skills_taught":[
+      "Kubernetes",
+      "Communication",
+      "Prototyping"
+    ],
+    "difficulty":"Beginner",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/160",
+    "rating":3.8
+  },
+  {
+    "id":"course_0161",
+    "title":"The Complete Guide to Machine Learning",
+    "provider":"edX",
+    "description":"This course covers the fundamentals of Machine Learning and advances to complex topics in industry tools. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Machine Learning"
+    ],
+    "difficulty":"Advanced",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/161",
+    "rating":4.6
+  },
+  {
+    "id":"course_0162",
+    "title":"Learn Firewalls and Microservices",
+    "provider":"DataCamp",
+    "description":"Learn Firewalls from scratch. This course guides you through Microservices and Node.js with practical examples.",
+    "skills_taught":[
+      "Firewalls",
+      "Microservices",
+      "Node.js"
+    ],
+    "difficulty":"Beginner",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/162",
+    "rating":4.2
+  },
+  {
+    "id":"course_0163",
+    "title":"Professional Penetration Testing and JavaScript",
+    "provider":"edX",
+    "description":"Learn Penetration Testing from scratch. This course guides you through JavaScript and Scikit-learn with practical examples.",
+    "skills_taught":[
+      "Penetration Testing",
+      "JavaScript",
+      "Scikit-learn"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/163",
+    "rating":4.6
+  },
+  {
+    "id":"course_0164",
+    "title":"Mastering Selenium and Network Security",
+    "provider":"Pluralsight",
+    "description":"Advanced specialization in Selenium. Deep dive into Network Security and master industry-standard tools.",
+    "skills_taught":[
+      "Selenium",
+      "Network Security"
+    ],
+    "difficulty":"Advanced",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/164",
+    "rating":4.4
+  },
+  {
+    "id":"course_0165",
+    "title":"Advanced Kubernetes",
+    "provider":"Codecademy",
+    "description":"This course covers the fundamentals of Kubernetes and advances to complex topics in industry tools. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Kubernetes"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/165",
+    "rating":3.7
+  },
+  {
+    "id":"course_0166",
+    "title":"Advanced TensorFlow",
+    "provider":"Udacity",
+    "description":"Advanced specialization in TensorFlow. Deep dive into industry tools and master industry-standard tools.",
+    "skills_taught":[
+      "TensorFlow"
+    ],
+    "difficulty":"Advanced",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/166",
+    "rating":3.6
+  },
+  {
+    "id":"course_0167",
+    "title":"Mastering Communication and Kubernetes",
+    "provider":"Pluralsight",
+    "description":"This course covers the fundamentals of Communication and advances to complex topics in Kubernetes. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Communication",
+      "Kubernetes",
+      "Responsive Design"
+    ],
+    "difficulty":"Advanced",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/167",
+    "rating":4.5
+  },
+  {
+    "id":"course_0168",
+    "title":"The Complete Guide to Scikit-learn and Statistics",
+    "provider":"Pluralsight",
+    "description":"This course covers the fundamentals of Scikit-learn and advances to complex topics in Statistics. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Scikit-learn",
+      "Statistics",
+      "CI\/CD"
+    ],
+    "difficulty":"Beginner",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/168",
+    "rating":4.4
+  },
+  {
+    "id":"course_0169",
+    "title":"Introduction to React and Leadership",
+    "provider":"Udacity",
+    "description":"Master React and Leadership with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "React",
+      "Leadership",
+      "JIRA"
+    ],
+    "difficulty":"Beginner",
+    "duration":"9 weeks",
+    "url":"https:\/\/example.com\/courses\/169",
+    "rating":4.3
+  },
+  {
+    "id":"course_0170",
+    "title":"Learn Penetration Testing",
+    "provider":"Codecademy",
+    "description":"This course covers the fundamentals of Penetration Testing and advances to complex topics in industry tools. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Penetration Testing"
+    ],
+    "difficulty":"Beginner",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/170",
+    "rating":4.1
+  },
+  {
+    "id":"course_0171",
+    "title":"Introduction to JIRA and Microservices",
+    "provider":"Pluralsight",
+    "description":"This course covers the fundamentals of JIRA and advances to complex topics in Microservices. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "JIRA",
+      "Microservices",
+      "Responsive Design"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/171",
+    "rating":5.0
+  },
+  {
+    "id":"course_0172",
+    "title":"Introduction to TensorFlow",
+    "provider":"edX",
+    "description":"Advanced specialization in TensorFlow. Deep dive into industry tools and master industry-standard tools.",
+    "skills_taught":[
+      "TensorFlow"
+    ],
+    "difficulty":"Advanced",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/172",
+    "rating":4.7
+  },
+  {
+    "id":"course_0173",
+    "title":"Mastering TensorFlow",
+    "provider":"Codecademy",
+    "description":"Master TensorFlow and industry tools with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "TensorFlow"
+    ],
+    "difficulty":"Advanced",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/173",
+    "rating":4.5
+  },
+  {
+    "id":"course_0174",
+    "title":"Learn Linux",
+    "provider":"Coursera",
+    "description":"Become an expert in Linux with this intensive training. Includes hands-on labs using industry tools.",
+    "skills_taught":[
+      "Linux"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/174",
+    "rating":3.8
+  },
+  {
+    "id":"course_0175",
+    "title":"Learn Leadership and User Research",
+    "provider":"Pluralsight",
+    "description":"Learn Leadership from scratch. This course guides you through User Research and more with practical examples.",
+    "skills_taught":[
+      "Leadership",
+      "User Research"
+    ],
+    "difficulty":"Beginner",
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/175",
+    "rating":4.8
+  },
+  {
+    "id":"course_0176",
+    "title":"The Complete Guide to REST APIs",
+    "provider":"Udemy",
+    "description":"Learn REST APIs from scratch. This course guides you through industry tools and more with practical examples.",
+    "skills_taught":[
+      "REST APIs"
+    ],
+    "difficulty":"Beginner",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/176",
+    "rating":4.2
+  },
+  {
+    "id":"course_0177",
+    "title":"Professional Product Strategy and Jenkins",
+    "provider":"Udacity",
+    "description":"Learn Product Strategy from scratch. This course guides you through Jenkins and more with practical examples.",
+    "skills_taught":[
+      "Product Strategy",
+      "Jenkins"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/177",
+    "rating":4.7
+  },
+  {
+    "id":"course_0178",
+    "title":"Mastering User Research and Statistics",
+    "provider":"Codecademy",
+    "description":"Learn User Research from scratch. This course guides you through Statistics and more with practical examples.",
+    "skills_taught":[
+      "User Research",
+      "Statistics"
+    ],
+    "difficulty":"Beginner",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/178",
+    "rating":4.0
+  },
+  {
+    "id":"course_0179",
+    "title":"Introduction to React",
+    "provider":"edX",
+    "description":"Master React and industry tools with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "React"
+    ],
+    "difficulty":"Beginner",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/179",
+    "rating":4.9
+  },
+  {
+    "id":"course_0180",
+    "title":"Introduction to Security and JavaScript",
+    "provider":"Coursera",
+    "description":"Become an expert in Security with this intensive training. Includes hands-on labs using JavaScript.",
+    "skills_taught":[
+      "Security",
+      "JavaScript"
+    ],
+    "difficulty":"Advanced",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/180",
+    "rating":3.8
+  },
+  {
+    "id":"course_0181",
+    "title":"Learn Power BI and Machine Learning",
+    "provider":"edX",
+    "description":"Advanced specialization in Power BI. Deep dive into Machine Learning and master industry-standard tools.",
+    "skills_taught":[
+      "Power BI",
+      "Machine Learning"
+    ],
+    "difficulty":"Advanced",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/181",
+    "rating":4.4
+  },
+  {
+    "id":"course_0182",
+    "title":"The Complete Guide to Scikit-learn",
+    "provider":"Udemy",
+    "description":"Become an expert in Scikit-learn with this intensive training. Includes hands-on labs using industry tools.",
+    "skills_taught":[
+      "Scikit-learn"
+    ],
+    "difficulty":"Advanced",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/182",
+    "rating":4.2
+  },
+  {
+    "id":"course_0183",
+    "title":"Learn CSS and System Design",
+    "provider":"Udacity",
+    "description":"Advanced specialization in CSS. Deep dive into System Design and master industry-standard tools.",
+    "skills_taught":[
+      "CSS",
+      "System Design"
+    ],
+    "difficulty":"Advanced",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/183",
+    "rating":3.7
+  },
+  {
+    "id":"course_0184",
+    "title":"Learn Adobe XD and Network Security",
+    "provider":"Pluralsight",
+    "description":"Learn Adobe XD from scratch. This course guides you through Network Security and Power BI with practical examples.",
+    "skills_taught":[
+      "Adobe XD",
+      "Network Security",
+      "Power BI"
+    ],
+    "difficulty":"Advanced",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/184",
+    "rating":4.5
+  },
+  {
+    "id":"course_0185",
+    "title":"Professional Selenium and Node.js",
+    "provider":"Udacity",
+    "description":"This course covers the fundamentals of Selenium and advances to complex topics in Node.js. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Selenium",
+      "Node.js"
+    ],
+    "difficulty":"Advanced",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/185",
+    "rating":3.6
+  },
+  {
+    "id":"course_0186",
+    "title":"Advanced Penetration Testing",
+    "provider":"Coursera",
+    "description":"Learn Penetration Testing from scratch. This course guides you through industry tools and more with practical examples.",
+    "skills_taught":[
+      "Penetration Testing"
+    ],
+    "difficulty":"Advanced",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/186",
+    "rating":4.6
+  },
+  {
+    "id":"course_0187",
+    "title":"Introduction to Testing",
+    "provider":"Udacity",
+    "description":"Master Testing and industry tools with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Testing"
+    ],
+    "difficulty":"Advanced",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/187",
+    "rating":4.5
+  },
+  {
+    "id":"course_0188",
+    "title":"Advanced Communication and JavaScript",
+    "provider":"edX",
+    "description":"Master Communication and JavaScript with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Communication",
+      "JavaScript"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"7 weeks",
+    "url":"https:\/\/example.com\/courses\/188",
+    "rating":3.7
+  },
+  {
+    "id":"course_0189",
+    "title":"Mastering Git and Selenium",
+    "provider":"DataCamp",
+    "description":"Become an expert in Git with this intensive training. Includes hands-on labs using Selenium.",
+    "skills_taught":[
+      "Git",
+      "Selenium"
+    ],
+    "difficulty":"Advanced",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/189",
+    "rating":4.5
+  },
+  {
+    "id":"course_0190",
+    "title":"Learn Statistics and Product Strategy",
+    "provider":"DataCamp",
+    "description":"Become an expert in Statistics with this intensive training. Includes hands-on labs using Product Strategy.",
+    "skills_taught":[
+      "Statistics",
+      "Product Strategy",
+      "Cloud Computing"
+    ],
+    "difficulty":"Beginner",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/190",
+    "rating":4.5
+  },
+  {
+    "id":"course_0191",
+    "title":"The Complete Guide to API Design and JIRA",
+    "provider":"Udemy",
+    "description":"Advanced specialization in API Design. Deep dive into JIRA and master industry-standard tools.",
+    "skills_taught":[
+      "API Design",
+      "JIRA",
+      "React"
+    ],
+    "difficulty":"Advanced",
+    "duration":"4 weeks",
+    "url":"https:\/\/example.com\/courses\/191",
+    "rating":5.0
+  },
+  {
+    "id":"course_0192",
+    "title":"Introduction to NoSQL and API Design",
+    "provider":"Codecademy",
+    "description":"Become an expert in NoSQL with this intensive training. Includes hands-on labs using API Design.",
+    "skills_taught":[
+      "NoSQL",
+      "API Design"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/192",
+    "rating":3.9
+  },
+  {
+    "id":"course_0193",
+    "title":"Professional Scripting and Roadmapping",
+    "provider":"edX",
+    "description":"This course covers the fundamentals of Scripting and advances to complex topics in Roadmapping. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Scripting",
+      "Roadmapping"
+    ],
+    "difficulty":"Advanced",
+    "duration":"11 weeks",
+    "url":"https:\/\/example.com\/courses\/193",
+    "rating":4.4
+  },
+  {
+    "id":"course_0194",
+    "title":"The Complete Guide to Networking and Penetration Testing",
+    "provider":"Udacity",
+    "description":"This course covers the fundamentals of Networking and advances to complex topics in Penetration Testing. Perfect for beginners and intermediates.",
+    "skills_taught":[
+      "Networking",
+      "Penetration Testing",
+      "Data Analysis"
+    ],
+    "difficulty":"Beginner",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/194",
+    "rating":4.2
+  },
+  {
+    "id":"course_0195",
+    "title":"Learn Figma",
+    "provider":"edX",
+    "description":"Learn Figma from scratch. This course guides you through industry tools and more with practical examples.",
+    "skills_taught":[
+      "Figma"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/195",
+    "rating":3.7
+  },
+  {
+    "id":"course_0196",
+    "title":"Learn Cloud Computing and NoSQL",
+    "provider":"DataCamp",
+    "description":"Master Cloud Computing and NoSQL with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Cloud Computing",
+      "NoSQL",
+      "Jenkins"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"12 weeks",
+    "url":"https:\/\/example.com\/courses\/196",
+    "rating":3.7
+  },
+  {
+    "id":"course_0197",
+    "title":"Learn Python and Java",
+    "provider":"Pluralsight",
+    "description":"Master Python and Java with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Python",
+      "Java",
+      "Responsive Design"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"5 weeks",
+    "url":"https:\/\/example.com\/courses\/197",
+    "rating":3.7
+  },
+  {
+    "id":"course_0198",
+    "title":"Mastering Node.js and React",
+    "provider":"Coursera",
+    "description":"Master Node.js and React with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Node.js",
+      "React"
+    ],
+    "difficulty":"Advanced",
+    "duration":"6 weeks",
+    "url":"https:\/\/example.com\/courses\/198",
+    "rating":3.5
+  },
+  {
+    "id":"course_0199",
+    "title":"Advanced Firewalls",
+    "provider":"Pluralsight",
+    "description":"Master Firewalls and industry tools with this comprehensive course. Learn best practices and build real-world projects.",
+    "skills_taught":[
+      "Firewalls"
+    ],
+    "difficulty":"Beginner",
+    "duration":"8 weeks",
+    "url":"https:\/\/example.com\/courses\/199",
+    "rating":3.9
+  },
+  {
+    "id":"course_0200",
+    "title":"Advanced MLOps and Scikit-learn",
+    "provider":"Pluralsight",
+    "description":"Become an expert in MLOps with this intensive training. Includes hands-on labs using Scikit-learn.",
+    "skills_taught":[
+      "MLOps",
+      "Scikit-learn"
+    ],
+    "difficulty":"Advanced",
+    "duration":"10 weeks",
+    "url":"https:\/\/example.com\/courses\/200",
+    "rating":4.3
   }
 ]

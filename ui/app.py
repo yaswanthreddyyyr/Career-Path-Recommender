@@ -7,6 +7,7 @@ course recommendations, and career path visualization.
 
 import sys
 from pathlib import Path
+from collections import Counter
 
 import streamlit as st
 import plotly.express as px
@@ -417,6 +418,89 @@ def render_career_path(recommender, current_role, target_role):
                 st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
 
 
+def render_market_insights(recommender):
+    """Render market insights dashboard."""
+    st.header("📊 Market Insights")
+    
+    jobs = recommender.get_all_jobs()
+    if not jobs:
+        st.warning("No job data available.")
+        return
+    
+    # 1. Top Skills in Demand
+    all_skills = []
+    for job in jobs:
+        all_skills.extend(job.required_skills)
+        all_skills.extend(job.preferred_skills)
+    
+    skill_counts = Counter(all_skills).most_common(15)
+    skills_df = pd.DataFrame(skill_counts, columns=["Skill", "Count"])
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.subheader("🔥 Top Skills in Demand")
+        fig = px.bar(
+            skills_df, 
+            x="Count", 
+            y="Skill", 
+            orientation="h",
+            color="Count",
+            color_continuous_scale="Viridis"
+        )
+        fig.update_layout(yaxis={'categoryorder': 'total ascending'})
+        st.plotly_chart(fig, use_container_width=True)
+    
+    # 2. Top Job Titles
+    titles = [job.title for job in jobs]
+    title_counts = Counter(titles).most_common(10)
+    titles_df = pd.DataFrame(title_counts, columns=["Role", "Count"])
+    
+    with col2:
+        st.subheader("🏆 Most Popular Roles")
+        fig = px.pie(
+            titles_df, 
+            values="Count", 
+            names="Role",
+            hole=0.4,
+            color_discrete_sequence=px.colors.qualitative.Prism
+        )
+        st.plotly_chart(fig, use_container_width=True)
+    
+    # 3. Salary vs Experience (if salary data is parseable)
+    # Simple parsing logic for the synthetic data format "$XX,XXX - $YY,YYY"
+    salary_data = []
+    for job in jobs:
+        if job.salary_range and job.experience_level:
+            try:
+                # Extract lower bound
+                lower = int(job.salary_range.split("-")[0].replace("$", "").replace(",", "").strip())
+                salary_data.append({
+                    "Role": job.title,
+                    "Salary": lower,
+                    "Experience": job.experience_level
+                })
+            except:
+                continue
+                
+    if salary_data:
+        st.subheader("💰 Salary Distribution by Experience")
+        salary_df = pd.DataFrame(salary_data)
+        
+        # Order experience levels
+        level_order = ["Entry-Level", "Junior", "Mid-Level", "Senior", "Lead", "Principal"]
+        
+        fig = px.box(
+            salary_df,
+            x="Experience",
+            y="Salary",
+            color="Experience",
+            category_orders={"Experience": level_order},
+            points="all"
+        )
+        st.plotly_chart(fig, use_container_width=True)
+
+
 def main():
     """Main application entry point."""
     render_header()
@@ -429,11 +513,12 @@ def main():
     profile, target_role = render_sidebar()
     
     # Main content tabs
-    tab1, tab2, tab3, tab4 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
         "💼 Job Recommendations",
         "🎯 Skill Gap Analysis",
         "📚 Course Recommendations",
-        "🛤️ Career Path"
+        "🛤️ Career Path",
+        "📊 Market Insights"
     ])
     
     skill_gaps = None
@@ -452,13 +537,16 @@ def main():
     
     with tab4:
         render_career_path(recommender, profile.current_role or "Analyst", target_role)
+        
+    with tab5:
+        render_market_insights(recommender)
     
     # Footer
     st.divider()
     st.markdown(
         """
         <div style="text-align: center; color: #888; padding: 1rem;">
-            Built with ❤️ by Yaswanth Reddy, Manoj Siva Sai Deepank & Ubaid Khan Mohammed
+            Built with ❤️ by Ubaid Khan Mohammed, Manoj Siva Sai Deepank & Yaswanth Yaradoddi
             <br>
             Information Storage and Retrieval Project | 2025
         </div>
@@ -469,4 +557,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
