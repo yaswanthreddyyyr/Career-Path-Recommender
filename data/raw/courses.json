@@ -1,0 +1,336 @@
+[
+  {
+    "id":"course_001",
+    "title":"Machine Learning Specialization",
+    "provider":"Coursera",
+    "description":"Learn machine learning from Andrew Ng. Covers supervised learning, unsupervised learning, and best practices.",
+    "skills_taught":[
+      "Machine Learning",
+      "Python",
+      "TensorFlow",
+      "Neural Networks"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"3 months",
+    "url":"https:\/\/coursera.org\/ml-specialization",
+    "rating":4.9
+  },
+  {
+    "id":"course_002",
+    "title":"Deep Learning Specialization",
+    "provider":"Coursera",
+    "description":"Master deep learning fundamentals. Build neural networks, CNNs, RNNs, and more.",
+    "skills_taught":[
+      "Deep Learning",
+      "TensorFlow",
+      "Neural Networks",
+      "Computer Vision",
+      "NLP"
+    ],
+    "difficulty":"Advanced",
+    "duration":"4 months",
+    "url":"https:\/\/coursera.org\/deep-learning",
+    "rating":4.8
+  },
+  {
+    "id":"course_003",
+    "title":"Python for Data Science",
+    "provider":"edX",
+    "description":"Learn Python programming for data analysis. Covers pandas, numpy, and visualization.",
+    "skills_taught":[
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Data Visualization",
+      "Matplotlib"
+    ],
+    "difficulty":"Beginner",
+    "duration":"6 weeks",
+    "url":"https:\/\/edx.org\/python-data-science",
+    "rating":4.6
+  },
+  {
+    "id":"course_004",
+    "title":"SQL for Data Analysis",
+    "provider":"Udacity",
+    "description":"Master SQL for querying databases. Learn joins, aggregations, and window functions.",
+    "skills_taught":[
+      "SQL",
+      "Database Management",
+      "Data Analysis",
+      "PostgreSQL"
+    ],
+    "difficulty":"Beginner",
+    "duration":"4 weeks",
+    "url":"https:\/\/udacity.com\/sql-data-analysis",
+    "rating":4.5
+  },
+  {
+    "id":"course_005",
+    "title":"AWS Cloud Practitioner",
+    "provider":"AWS",
+    "description":"Learn AWS cloud fundamentals. Prepare for the AWS Cloud Practitioner certification.",
+    "skills_taught":[
+      "AWS",
+      "Cloud Computing",
+      "EC2",
+      "S3",
+      "IAM"
+    ],
+    "difficulty":"Beginner",
+    "duration":"6 weeks",
+    "url":"https:\/\/aws.amazon.com\/training",
+    "rating":4.7
+  },
+  {
+    "id":"course_006",
+    "title":"Docker and Kubernetes",
+    "provider":"Udemy",
+    "description":"Learn containerization with Docker and orchestration with Kubernetes.",
+    "skills_taught":[
+      "Docker",
+      "Kubernetes",
+      "DevOps",
+      "Container Orchestration"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"8 weeks",
+    "url":"https:\/\/udemy.com\/docker-kubernetes",
+    "rating":4.6
+  },
+  {
+    "id":"course_007",
+    "title":"React - The Complete Guide",
+    "provider":"Udemy",
+    "description":"Build modern web applications with React. Covers hooks, Redux, and Next.js.",
+    "skills_taught":[
+      "React",
+      "JavaScript",
+      "Redux",
+      "Next.js",
+      "Frontend Development"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"10 weeks",
+    "url":"https:\/\/udemy.com\/react-complete-guide",
+    "rating":4.8
+  },
+  {
+    "id":"course_008",
+    "title":"Natural Language Processing",
+    "provider":"Coursera",
+    "description":"Learn NLP techniques including text classification, NER, and transformers.",
+    "skills_taught":[
+      "NLP",
+      "Python",
+      "Transformers",
+      "BERT",
+      "Text Processing"
+    ],
+    "difficulty":"Advanced",
+    "duration":"3 months",
+    "url":"https:\/\/coursera.org\/nlp-specialization",
+    "rating":4.7
+  },
+  {
+    "id":"course_009",
+    "title":"Statistics for Data Science",
+    "provider":"edX",
+    "description":"Master statistics fundamentals for data science. Covers probability, hypothesis testing, and regression.",
+    "skills_taught":[
+      "Statistics",
+      "Probability",
+      "Hypothesis Testing",
+      "Regression",
+      "Data Analysis"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"8 weeks",
+    "url":"https:\/\/edx.org\/statistics-data-science",
+    "rating":4.5
+  },
+  {
+    "id":"course_010",
+    "title":"FastAPI Modern Python Web Development",
+    "provider":"Udemy",
+    "description":"Build fast APIs with Python and FastAPI. Learn async programming and API best practices.",
+    "skills_taught":[
+      "FastAPI",
+      "Python",
+      "REST APIs",
+      "Async Programming",
+      "Pydantic"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"6 weeks",
+    "url":"https:\/\/udemy.com\/fastapi",
+    "rating":4.7
+  },
+  {
+    "id":"course_011",
+    "title":"Data Engineering with Python",
+    "provider":"DataCamp",
+    "description":"Learn to build data pipelines. Covers ETL, Airflow, and data warehousing.",
+    "skills_taught":[
+      "Data Engineering",
+      "Python",
+      "Airflow",
+      "ETL",
+      "Data Pipelines"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"8 weeks",
+    "url":"https:\/\/datacamp.com\/data-engineering",
+    "rating":4.4
+  },
+  {
+    "id":"course_012",
+    "title":"Tableau for Data Visualization",
+    "provider":"Coursera",
+    "description":"Create impactful visualizations and dashboards with Tableau.",
+    "skills_taught":[
+      "Tableau",
+      "Data Visualization",
+      "Dashboard Design",
+      "Data Analysis"
+    ],
+    "difficulty":"Beginner",
+    "duration":"4 weeks",
+    "url":"https:\/\/coursera.org\/tableau",
+    "rating":4.6
+  },
+  {
+    "id":"course_013",
+    "title":"Git and GitHub for Beginners",
+    "provider":"Udemy",
+    "description":"Learn version control with Git and collaboration with GitHub.",
+    "skills_taught":[
+      "Git",
+      "GitHub",
+      "Version Control",
+      "Collaboration"
+    ],
+    "difficulty":"Beginner",
+    "duration":"2 weeks",
+    "url":"https:\/\/udemy.com\/git-github",
+    "rating":4.5
+  },
+  {
+    "id":"course_014",
+    "title":"PyTorch for Deep Learning",
+    "provider":"Udacity",
+    "description":"Master PyTorch for building deep learning models. Covers CNNs, RNNs, and GANs.",
+    "skills_taught":[
+      "PyTorch",
+      "Deep Learning",
+      "Neural Networks",
+      "Computer Vision"
+    ],
+    "difficulty":"Advanced",
+    "duration":"3 months",
+    "url":"https:\/\/udacity.com\/pytorch",
+    "rating":4.8
+  },
+  {
+    "id":"course_015",
+    "title":"Product Management Fundamentals",
+    "provider":"Coursera",
+    "description":"Learn product management skills. Covers roadmapping, user research, and agile.",
+    "skills_taught":[
+      "Product Management",
+      "Agile",
+      "User Research",
+      "Roadmapping",
+      "Product Strategy"
+    ],
+    "difficulty":"Beginner",
+    "duration":"6 weeks",
+    "url":"https:\/\/coursera.org\/product-management",
+    "rating":4.5
+  },
+  {
+    "id":"course_016",
+    "title":"Apache Spark for Big Data",
+    "provider":"edX",
+    "description":"Process big data with Apache Spark. Learn PySpark and distributed computing.",
+    "skills_taught":[
+      "Spark",
+      "PySpark",
+      "Big Data",
+      "Distributed Computing",
+      "Data Processing"
+    ],
+    "difficulty":"Advanced",
+    "duration":"8 weeks",
+    "url":"https:\/\/edx.org\/apache-spark",
+    "rating":4.6
+  },
+  {
+    "id":"course_017",
+    "title":"Cybersecurity Fundamentals",
+    "provider":"Coursera",
+    "description":"Learn security fundamentals. Covers network security, cryptography, and threat analysis.",
+    "skills_taught":[
+      "Security",
+      "Networking",
+      "Cryptography",
+      "Threat Analysis",
+      "Penetration Testing"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"3 months",
+    "url":"https:\/\/coursera.org\/cybersecurity",
+    "rating":4.7
+  },
+  {
+    "id":"course_018",
+    "title":"Node.js Backend Development",
+    "provider":"Udemy",
+    "description":"Build scalable backend applications with Node.js. Covers Express, MongoDB, and REST APIs.",
+    "skills_taught":[
+      "Node.js",
+      "JavaScript",
+      "Express",
+      "MongoDB",
+      "REST APIs"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"8 weeks",
+    "url":"https:\/\/udemy.com\/nodejs",
+    "rating":4.6
+  },
+  {
+    "id":"course_019",
+    "title":"MLOps: Machine Learning Operations",
+    "provider":"Coursera",
+    "description":"Learn to deploy and manage ML models in production. Covers CI\/CD for ML.",
+    "skills_taught":[
+      "MLOps",
+      "Machine Learning",
+      "Docker",
+      "Kubernetes",
+      "Model Deployment"
+    ],
+    "difficulty":"Advanced",
+    "duration":"3 months",
+    "url":"https:\/\/coursera.org\/mlops",
+    "rating":4.7
+  },
+  {
+    "id":"course_020",
+    "title":"Power BI for Business Intelligence",
+    "provider":"Microsoft Learn",
+    "description":"Create interactive reports and dashboards with Power BI.",
+    "skills_taught":[
+      "Power BI",
+      "Data Visualization",
+      "Business Intelligence",
+      "DAX",
+      "Data Modeling"
+    ],
+    "difficulty":"Intermediate",
+    "duration":"6 weeks",
+    "url":"https:\/\/learn.microsoft.com\/power-bi",
+    "rating":4.6
+  }
+]

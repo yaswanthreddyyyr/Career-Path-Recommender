@@ -1,0 +1,182 @@
+[
+  {
+    "skill":"Python",
+    "category":"Programming Languages",
+    "related_skills":[
+      "Java",
+      "R",
+      "JavaScript"
+    ]
+  },
+  {
+    "skill":"Machine Learning",
+    "category":"AI\/ML",
+    "related_skills":[
+      "Deep Learning",
+      "Statistics",
+      "Data Science"
+    ]
+  },
+  {
+    "skill":"SQL",
+    "category":"Databases",
+    "related_skills":[
+      "PostgreSQL",
+      "MySQL",
+      "NoSQL"
+    ]
+  },
+  {
+    "skill":"TensorFlow",
+    "category":"AI\/ML Frameworks",
+    "related_skills":[
+      "PyTorch",
+      "Keras",
+      "Scikit-learn"
+    ]
+  },
+  {
+    "skill":"PyTorch",
+    "category":"AI\/ML Frameworks",
+    "related_skills":[
+      "TensorFlow",
+      "Deep Learning",
+      "Neural Networks"
+    ]
+  },
+  {
+    "skill":"AWS",
+    "category":"Cloud",
+    "related_skills":[
+      "GCP",
+      "Azure",
+      "Cloud Computing"
+    ]
+  },
+  {
+    "skill":"Docker",
+    "category":"DevOps",
+    "related_skills":[
+      "Kubernetes",
+      "Containerization",
+      "CI\/CD"
+    ]
+  },
+  {
+    "skill":"Kubernetes",
+    "category":"DevOps",
+    "related_skills":[
+      "Docker",
+      "Cloud",
+      "Orchestration"
+    ]
+  },
+  {
+    "skill":"React",
+    "category":"Frontend",
+    "related_skills":[
+      "JavaScript",
+      "TypeScript",
+      "Vue.js"
+    ]
+  },
+  {
+    "skill":"JavaScript",
+    "category":"Programming Languages",
+    "related_skills":[
+      "TypeScript",
+      "Node.js",
+      "React"
+    ]
+  },
+  {
+    "skill":"Data Visualization",
+    "category":"Data Analysis",
+    "related_skills":[
+      "Tableau",
+      "Power BI",
+      "Matplotlib"
+    ]
+  },
+  {
+    "skill":"Statistics",
+    "category":"Mathematics",
+    "related_skills":[
+      "Probability",
+      "Machine Learning",
+      "Data Analysis"
+    ]
+  },
+  {
+    "skill":"NLP",
+    "category":"AI\/ML",
+    "related_skills":[
+      "Transformers",
+      "BERT",
+      "Text Processing"
+    ]
+  },
+  {
+    "skill":"Deep Learning",
+    "category":"AI\/ML",
+    "related_skills":[
+      "Neural Networks",
+      "TensorFlow",
+      "PyTorch"
+    ]
+  },
+  {
+    "skill":"Git",
+    "category":"Tools",
+    "related_skills":[
+      "GitHub",
+      "Version Control",
+      "CI\/CD"
+    ]
+  },
+  {
+    "skill":"REST APIs",
+    "category":"Backend",
+    "related_skills":[
+      "FastAPI",
+      "Flask",
+      "GraphQL"
+    ]
+  },
+  {
+    "skill":"Spark",
+    "category":"Big Data",
+    "related_skills":[
+      "Hadoop",
+      "Data Engineering",
+      "PySpark"
+    ]
+  },
+  {
+    "skill":"Agile",
+    "category":"Methodologies",
+    "related_skills":[
+      "Scrum",
+      "Product Management",
+      "Project Management"
+    ]
+  },
+  {
+    "skill":"Linux",
+    "category":"Operating Systems",
+    "related_skills":[
+      "Bash",
+      "System Administration",
+      "DevOps"
+    ]
+  },
+  {
+    "skill":"Transformers",
+    "category":"AI\/ML",
+    "related_skills":[
+      "BERT",
+      "NLP",
+      "Hugging Face"
+    ]
+  }
+]

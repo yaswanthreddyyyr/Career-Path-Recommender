@@ -1,0 +1,330 @@
+[
+  {
+    "id":"job_001",
+    "title":"Data Scientist",
+    "company":"Tech Corp",
+    "description":"We are looking for a Data Scientist to analyze large datasets and build predictive models. You will work with machine learning algorithms, statistical analysis, and data visualization.",
+    "required_skills":[
+      "Python",
+      "Machine Learning",
+      "SQL",
+      "Statistics",
+      "Data Visualization"
+    ],
+    "preferred_skills":[
+      "TensorFlow",
+      "PyTorch",
+      "Spark",
+      "AWS"
+    ],
+    "experience_level":"Mid-Level",
+    "location":"San Francisco, CA",
+    "salary_range":"$120,000 - $160,000"
+  },
+  {
+    "id":"job_002",
+    "title":"Machine Learning Engineer",
+    "company":"AI Innovations",
+    "description":"Join our team to develop and deploy machine learning models at scale. Work on deep learning, NLP, and computer vision projects.",
+    "required_skills":[
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Docker",
+      "Kubernetes"
+    ],
+    "preferred_skills":[
+      "MLOps",
+      "AWS SageMaker",
+      "Model Optimization"
+    ],
+    "experience_level":"Senior",
+    "location":"New York, NY",
+    "salary_range":"$150,000 - $200,000"
+  },
+  {
+    "id":"job_003",
+    "title":"Software Engineer",
+    "company":"StartupXYZ",
+    "description":"Build scalable backend systems and APIs. Work with microservices architecture and cloud technologies.",
+    "required_skills":[
+      "Python",
+      "Java",
+      "REST APIs",
+      "PostgreSQL",
+      "Git"
+    ],
+    "preferred_skills":[
+      "Kubernetes",
+      "Redis",
+      "GraphQL",
+      "CI\/CD"
+    ],
+    "experience_level":"Mid-Level",
+    "location":"Austin, TX",
+    "salary_range":"$100,000 - $140,000"
+  },
+  {
+    "id":"job_004",
+    "title":"Data Analyst",
+    "company":"Analytics Plus",
+    "description":"Analyze business data to provide actionable insights. Create reports and dashboards for stakeholders.",
+    "required_skills":[
+      "SQL",
+      "Excel",
+      "Tableau",
+      "Statistics",
+      "Data Visualization"
+    ],
+    "preferred_skills":[
+      "Python",
+      "R",
+      "Power BI"
+    ],
+    "experience_level":"Entry-Level",
+    "location":"Chicago, IL",
+    "salary_range":"$60,000 - $85,000"
+  },
+  {
+    "id":"job_005",
+    "title":"Full Stack Developer",
+    "company":"WebDev Inc",
+    "description":"Develop web applications using modern frameworks. Work on both frontend and backend development.",
+    "required_skills":[
+      "JavaScript",
+      "React",
+      "Node.js",
+      "HTML\/CSS",
+      "MongoDB"
+    ],
+    "preferred_skills":[
+      "TypeScript",
+      "GraphQL",
+      "AWS",
+      "Docker"
+    ],
+    "experience_level":"Mid-Level",
+    "location":"Seattle, WA",
+    "salary_range":"$110,000 - $150,000"
+  },
+  {
+    "id":"job_006",
+    "title":"DevOps Engineer",
+    "company":"CloudOps",
+    "description":"Manage CI\/CD pipelines and cloud infrastructure. Implement automation and monitoring solutions.",
+    "required_skills":[
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Linux"
+    ],
+    "preferred_skills":[
+      "Python",
+      "Ansible",
+      "Prometheus",
+      "Jenkins"
+    ],
+    "experience_level":"Senior",
+    "location":"Remote",
+    "salary_range":"$140,000 - $180,000"
+  },
+  {
+    "id":"job_007",
+    "title":"Product Manager",
+    "company":"ProductLab",
+    "description":"Lead product development from ideation to launch. Work with engineering and design teams.",
+    "required_skills":[
+      "Product Strategy",
+      "Agile",
+      "User Research",
+      "Data Analysis",
+      "Communication"
+    ],
+    "preferred_skills":[
+      "SQL",
+      "A\/B Testing",
+      "Roadmapping",
+      "Stakeholder Management"
+    ],
+    "experience_level":"Senior",
+    "location":"Boston, MA",
+    "salary_range":"$130,000 - $170,000"
+  },
+  {
+    "id":"job_008",
+    "title":"Backend Engineer",
+    "company":"ServerSide Co",
+    "description":"Design and implement backend services and APIs. Focus on performance and scalability.",
+    "required_skills":[
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "REST APIs",
+      "Redis"
+    ],
+    "preferred_skills":[
+      "FastAPI",
+      "Celery",
+      "Elasticsearch",
+      "AWS"
+    ],
+    "experience_level":"Mid-Level",
+    "location":"Denver, CO",
+    "salary_range":"$105,000 - $145,000"
+  },
+  {
+    "id":"job_009",
+    "title":"NLP Engineer",
+    "company":"LanguageAI",
+    "description":"Develop natural language processing solutions. Work on text classification, named entity recognition, and language models.",
+    "required_skills":[
+      "Python",
+      "NLP",
+      "Transformers",
+      "PyTorch",
+      "BERT"
+    ],
+    "preferred_skills":[
+      "Hugging Face",
+      "spaCy",
+      "LLMs",
+      "Vector Databases"
+    ],
+    "experience_level":"Mid-Level",
+    "location":"San Jose, CA",
+    "salary_range":"$130,000 - $170,000"
+  },
+  {
+    "id":"job_010",
+    "title":"Data Engineer",
+    "company":"DataFlow Systems",
+    "description":"Build and maintain data pipelines. Work with big data technologies and ETL processes.",
+    "required_skills":[
+      "Python",
+      "SQL",
+      "Spark",
+      "Airflow",
+      "AWS"
+    ],
+    "preferred_skills":[
+      "Kafka",
+      "Snowflake",
+      "dbt",
+      "Data Modeling"
+    ],
+    "experience_level":"Mid-Level",
+    "location":"Atlanta, GA",
+    "salary_range":"$115,000 - $155,000"
+  },
+  {
+    "id":"job_011",
+    "title":"Frontend Developer",
+    "company":"UIUXStudio",
+    "description":"Create beautiful and responsive web interfaces. Focus on user experience and performance.",
+    "required_skills":[
+      "JavaScript",
+      "React",
+      "HTML\/CSS",
+      "TypeScript",
+      "Git"
+    ],
+    "preferred_skills":[
+      "Next.js",
+      "Tailwind CSS",
+      "Testing",
+      "Figma"
+    ],
+    "experience_level":"Mid-Level",
+    "location":"Los Angeles, CA",
+    "salary_range":"$95,000 - $135,000"
+  },
+  {
+    "id":"job_012",
+    "title":"AI Research Scientist",
+    "company":"Research Labs",
+    "description":"Conduct cutting-edge AI research. Publish papers and develop novel algorithms.",
+    "required_skills":[
+      "Python",
+      "Deep Learning",
+      "Mathematics",
+      "Research",
+      "PyTorch"
+    ],
+    "preferred_skills":[
+      "PhD",
+      "Publications",
+      "Reinforcement Learning",
+      "Computer Vision"
+    ],
+    "experience_level":"Senior",
+    "location":"Palo Alto, CA",
+    "salary_range":"$180,000 - $250,000"
+  },
+  {
+    "id":"job_013",
+    "title":"Security Engineer",
+    "company":"SecureNet",
+    "description":"Implement security measures and conduct vulnerability assessments. Protect systems from cyber threats.",
+    "required_skills":[
+      "Security",
+      "Python",
+      "Linux",
+      "Networking",
+      "Penetration Testing"
+    ],
+    "preferred_skills":[
+      "CISSP",
+      "Cloud Security",
+      "SIEM",
+      "Incident Response"
+    ],
+    "experience_level":"Senior",
+    "location":"Washington, DC",
+    "salary_range":"$135,000 - $175,000"
+  },
+  {
+    "id":"job_014",
+    "title":"Mobile Developer",
+    "company":"AppMakers",
+    "description":"Develop iOS and Android applications. Focus on performance and user experience.",
+    "required_skills":[
+      "Swift",
+      "Kotlin",
+      "Mobile Development",
+      "REST APIs",
+      "Git"
+    ],
+    "preferred_skills":[
+      "React Native",
+      "Flutter",
+      "CI\/CD",
+      "App Store Optimization"
+    ],
+    "experience_level":"Mid-Level",
+    "location":"Miami, FL",
+    "salary_range":"$100,000 - $140,000"
+  },
+  {
+    "id":"job_015",
+    "title":"Business Intelligence Analyst",
+    "company":"InsightCorp",
+    "description":"Create BI dashboards and reports. Transform data into actionable business insights.",
+    "required_skills":[
+      "SQL",
+      "Tableau",
+      "Power BI",
+      "Data Analysis",
+      "Excel"
+    ],
+    "preferred_skills":[
+      "Python",
+      "ETL",
+      "Data Warehousing",
+      "Looker"
+    ],
+    "experience_level":"Mid-Level",
+    "location":"Minneapolis, MN",
+    "salary_range":"$80,000 - $110,000"
+  }
+]
