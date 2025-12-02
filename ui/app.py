@@ -599,11 +599,10 @@ def main():
         active_target_role = st.session_state.submitted_target_role
 
         # Main content tabs
-        tab1, tab2, tab3, tab4, tab5 = st.tabs([
+        tab1, tab2, tab3,  tab5 = st.tabs([
             "Job Recommendations",
             "Skill Gap Analysis",
             "Course Recommendations",
-            "Career Path",
             "Market Insights"
         ])
         
