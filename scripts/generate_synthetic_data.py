@@ -171,8 +171,10 @@ def main():
     DATA_RAW.mkdir(parents=True, exist_ok=True)
     
     # Generate data
-    jobs = generate_jobs(500)
-    courses = generate_courses(200)
+    # 5,000 jobs is a "sweet spot" - enough density for the graph, 
+    # but avoids excessive duplication/wait times.
+    jobs = generate_jobs(5000)
+    courses = generate_courses(1000)
     
     # Save jobs
     jobs_df = pd.DataFrame(jobs)

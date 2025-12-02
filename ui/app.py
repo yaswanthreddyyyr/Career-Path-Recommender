@@ -175,6 +175,11 @@ def render_job_recommendations(recommender, profile, top_k=10):
         st.warning("No matching jobs found. Try adjusting your profile.")
         return
     
+    # Check for cold start indication (neutral score implies cold start)
+    is_cold_start = all(r.similarity_score == 0.5 for r in recommendations)
+    if is_cold_start:
+        st.info("👋 We noticed your profile is a bit empty. Here are some popular **Entry-Level** roles to get you started! Add skills to see personalized matches.")
+    
     # Display summary metrics
     col1, col2, col3 = st.columns(3)
     with col1:

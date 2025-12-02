@@ -20,6 +20,7 @@ from collections import defaultdict
 from src.core.embeddings import EmbeddingEngine
 from src.core.similarity import SimilaritySearch, MultiIndexSearch
 from src.core.hybrid_search import HybridSearch, SkillNormalizer, QueryExpander, BM25
+from src.core.graph import SkillGraphBuilder
 from src.core.reranker import (
     CrossEncoderReranker,
     TFIDFSkillWeighter,
@@ -99,6 +100,7 @@ class CareerRecommender:
         self.skill_normalizer = SkillNormalizer()
         self.query_expander = QueryExpander()
         self.skill_weighter = TFIDFSkillWeighter()
+        self.skill_graph = SkillGraphBuilder()
         self.diversity_reranker = DiversityReranker(lambda_param=0.7)
         self.reranker = CrossEncoderReranker(use_model=use_reranking) if use_reranking else None
         
@@ -247,7 +249,55 @@ class CareerRecommender:
         print("Initializing TF-IDF skill weighting...")
         all_skill_lists = [job.required_skills + job.preferred_skills for job in jobs]
         self.skill_weighter.fit(all_skill_lists)
+        
+        # Initialize Skill Graph
+        print("Initializing Skill Dependency Graph...")
+        self.skill_graph.fit(jobs)
     
+    def _is_cold_start(self, profile: UserProfile) -> bool:
+        """Check if profile has minimal information."""
+        has_skills = bool(profile.skills and any(s.strip() for s in profile.skills))
+        has_role = bool(profile.current_role and profile.current_role.strip())
+        has_goals = bool(profile.career_goals and profile.career_goals.strip())
+        
+        # If no skills and no current role, it's a cold start
+        if not has_skills and not has_role:
+            return True
+            
+        return False
+
+    def _get_cold_start_recommendations(self, top_k: int = 10) -> list[JobRecommendation]:
+        """
+        Return popular entry-level jobs for users with no profile data.
+        """
+        all_jobs = list(self._jobs.values())
+        
+        # Filter for entry-level or junior roles
+        entry_level_jobs = [
+            job for job in all_jobs 
+            if job.experience_level and 
+            ("entry" in job.experience_level.lower() or "junior" in job.experience_level.lower())
+        ]
+        
+        # If no explicit entry level found, take a random sample of all jobs
+        candidates = entry_level_jobs if entry_level_jobs else all_jobs
+        
+        # Sort by recency if possible, otherwise shuffle
+        # For now, we'll just return a random sample to ensure variety
+        import random
+        selected_jobs = random.sample(candidates, min(len(candidates), top_k))
+        
+        recommendations = []
+        for job in selected_jobs:
+            recommendations.append(JobRecommendation(
+                job=job,
+                similarity_score=0.5, # Default neutral score
+                matching_skills=[],
+                missing_skills=job.required_skills, # All skills are technically missing
+            ))
+            
+        return recommendations
+
     def recommend_jobs(
         self,
         profile: UserProfile,
@@ -274,6 +324,11 @@ class CareerRecommender:
             List of job recommendations with scores.
         """
         self.initialize()
+        
+        # Check for cold start (empty/minimal profile)
+        if self._is_cold_start(profile):
+            print("Cold start profile detected. Returning popular entry-level jobs.")
+            return self._get_cold_start_recommendations(top_k)
         
         # Step 1: Expand query with related skills
         expanded_skills = self.query_expander.expand_skills(profile.skills, max_expansion=3)
@@ -481,6 +536,8 @@ class CareerRecommender:
         """
         Recommend courses to fill skill gaps using hybrid search.
         
+        Optimized with Graph-based ordering (Prerequisites first).
+        
         Args:
             skill_gaps: List of skill gaps to address.
             top_k: Number of recommendations to return.
@@ -493,6 +550,14 @@ class CareerRecommender:
         
         if not skill_gaps:
             return []
+            
+        # 1. Use Graph to order skill gaps (Prerequisites -> Advanced)
+        gap_skill_names = [g.skill for g in skill_gaps]
+        ordered_skills = self.skill_graph.suggest_learning_path(gap_skill_names)
+        
+        # Re-order skill_gaps list based on graph suggestion
+        skill_order_map = {skill.lower(): i for i, skill in enumerate(ordered_skills)}
+        skill_gaps.sort(key=lambda x: skill_order_map.get(x.skill.lower(), 999))
         
         # Create query from skill gaps (weighted by importance)
         weighted_skills = []
@@ -610,6 +675,31 @@ class CareerRecommender:
             
             return recommendations
     
+    def get_learning_path_graph(self, target_skills: list[str]) -> dict:
+        """
+        Get the visual representation of the learning dependency graph.
+        
+        Args:
+            target_skills: List of skills to learn.
+            
+        Returns:
+            Dictionary representing nodes and edges for visualization.
+        """
+        self.initialize()
+        path_skills = self.skill_graph.suggest_learning_path(target_skills)
+        
+        edges = []
+        nodes = []
+        
+        for skill in path_skills:
+            nodes.append({"id": skill, "label": skill})
+            prereqs = self.skill_graph.get_prerequisites(skill)
+            for p in prereqs:
+                if p in path_skills:
+                    edges.append({"source": p, "target": skill})
+                    
+        return {"nodes": nodes, "edges": edges}
+
     def get_career_path(
         self,
         current_role: str,
