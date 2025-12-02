@@ -109,10 +109,19 @@ def render_sidebar():
     st.sidebar.header("Your Profile")
     
     # Initialize defaults
-    default_skills = "Python, Machine Learning, SQL, Data Analysis"
-    default_role = "Data Analyst"
-    default_edu_index = 1  # Bachelor's Degree
-    default_experience = 3
+    # Placeholders/Examples
+    example_skills = "e.g. Python, Machine Learning, SQL, Data Analysis"
+    example_role = "e.g. Data Analyst"
+    example_goals = "e.g. Transition to a Data Scientist role with focus on machine learning"
+    example_target_role = "e.g. Data Scientist"
+    
+    # Initial values (empty/zero by default)
+    default_skills = ""
+    default_role = ""
+    default_edu_index = 0
+    default_experience = 0
+    default_goals = ""
+    default_target_role = ""
     
     # Resume Upload
     uploaded_file = st.sidebar.file_uploader(
@@ -137,6 +146,9 @@ def render_sidebar():
             if parsed.skills:
                 default_skills = ", ".join(parsed.skills)
             
+            if parsed.current_role:
+                default_role = parsed.current_role
+                
             if parsed.experience_years > 0:
                 default_experience = parsed.experience_years
                 
@@ -149,58 +161,70 @@ def render_sidebar():
                     default_edu_index = 1
                 else:
                     default_edu_index = 4 # Other
+            
+            if parsed.career_goals:
+                default_goals = parsed.career_goals
                     
         except Exception as e:
             st.sidebar.error(f"Error parsing resume: {str(e)}")
     
-    # Skills input
-    st.sidebar.subheader("Skills")
-    skills_input = st.sidebar.text_area(
-        "Enter your skills (comma-separated)",
-        value=default_skills,
-        height=100,
-        help="List your technical and soft skills"
-    )
+    # Form for profile inputs
+    with st.sidebar.form("profile_form"):
+        # Skills input
+        st.subheader("Skills")
+        skills_input = st.text_area(
+            "Enter your skills (comma-separated)",
+            value=default_skills,
+            placeholder=example_skills,
+            height=100,
+            help="List your technical and soft skills"
+        )
+        
+        # Current role
+        current_role = st.text_input(
+            "Current Role",
+            value=default_role,
+            placeholder=example_role,
+            help="Your current job title"
+        )
+        
+        # Education
+        education_options = ["High School", "Bachelor's Degree", "Master's Degree", "PhD", "Other"]
+        education = st.selectbox(
+            "Education Level",
+            education_options,
+            index=default_edu_index
+        )
+        
+        # Experience
+        experience = st.slider(
+            "Years of Experience",
+            min_value=0,
+            max_value=20,
+            value=default_experience,
+            help="Total years of professional experience"
+        )
+        
+        # Career goals
+        st.subheader("Career Goals")
+        career_goals = st.text_area(
+            "Describe your career aspirations",
+            value=default_goals,
+            placeholder=example_goals,
+            height=100
+        )
+        
+        # Target role for skill gap analysis
+        target_role = st.text_input(
+            "Target Role",
+            value=default_target_role,
+            placeholder=example_target_role,
+            help="The role you want to transition to"
+        )
+        
+        submit_button = st.form_submit_button("Get Recommendations")
+
     skills = [s.strip() for s in skills_input.split(",") if s.strip()]
-    
-    # Current role
-    current_role = st.sidebar.text_input(
-        "Current Role",
-        value=default_role,
-        help="Your current job title"
-    )
-    
-    # Education
-    education_options = ["High School", "Bachelor's Degree", "Master's Degree", "PhD", "Other"]
-    education = st.sidebar.selectbox(
-        "Education Level",
-        education_options,
-        index=default_edu_index
-    )
-    
-    # Experience
-    experience = st.sidebar.slider(
-        "Years of Experience",
-        min_value=0,
-        max_value=20,
-        value=default_experience,
-        help="Total years of professional experience"
-    )
-    
-    # Career goals
-    st.sidebar.subheader("Career Goals")
-    career_goals = st.sidebar.text_area(
-        "Describe your career aspirations",
-        value="Transition to a Data Scientist role with focus on machine learning",
-        height=100
-    )
-    
-    # Target role for skill gap analysis
-    target_role = st.sidebar.text_input(
-        "Target Role",
-        value="Data Scientist",
-        help="The role you want to transition to"
-    )
     
     return UserProfile(
         skills=skills,
@@ -208,7 +232,7 @@ def render_sidebar():
         education=education,
         experience_years=experience,
         career_goals=career_goals,
-    ), target_role
+    ), target_role, submit_button
 
 
 def render_job_recommendations(recommender, profile, top_k=10):
@@ -562,40 +586,52 @@ def main():
         recommender = load_recommender()
     
     # Get user profile from sidebar
-    profile, target_role = render_sidebar()
+    profile, target_role, submitted = render_sidebar()
     
-    # Main content tabs
-    tab1, tab2, tab3, tab4, tab5 = st.tabs([
-        "Job Recommendations",
-        "Skill Gap Analysis",
-        "Course Recommendations",
-        "Career Path",
-        "Market Insights"
-    ])
+    # Store submitted profile in session state
+    if submitted:
+        st.session_state.submitted_profile = profile
+        st.session_state.submitted_target_role = target_role
     
-    skill_gaps = None
-    
-    with tab1:
-        render_job_recommendations(recommender, profile)
-    
-    with tab2:
-        skill_gaps = render_skill_gap_analysis(recommender, profile, target_role)
-    
-    with tab3:
-        if skill_gaps is None:
-            with st.spinner(f"Analyzing skill gaps for {target_role}..."):
-                skill_gaps = recommender.analyze_skill_gaps(profile, target_role)
-            # Check if skill_gaps is still None or empty (could happen if analysis fails or no gaps)
-            if skill_gaps is None:
-                skill_gaps = []
-                
-        render_course_recommendations(recommender, skill_gaps)
-    
-    with tab4:
-        render_career_path(recommender, profile.current_role or "Analyst", target_role)
+    # Main content
+    if "submitted_profile" in st.session_state:
+        active_profile = st.session_state.submitted_profile
+        active_target_role = st.session_state.submitted_target_role
+
+        # Main content tabs
+        tab1, tab2, tab3, tab4, tab5 = st.tabs([
+            "Job Recommendations",
+            "Skill Gap Analysis",
+            "Course Recommendations",
+            "Career Path",
+            "Market Insights"
+        ])
         
-    with tab5:
-        render_market_insights(recommender)
+        skill_gaps = None
+        
+        with tab1:
+            render_job_recommendations(recommender, active_profile)
+        
+        with tab2:
+            skill_gaps = render_skill_gap_analysis(recommender, active_profile, active_target_role)
+        
+        with tab3:
+            if skill_gaps is None:
+                with st.spinner(f"Analyzing skill gaps for {active_target_role}..."):
+                    skill_gaps = recommender.analyze_skill_gaps(active_profile, active_target_role)
+                # Check if skill_gaps is still None or empty (could happen if analysis fails or no gaps)
+                if skill_gaps is None:
+                    skill_gaps = []
+                    
+            render_course_recommendations(recommender, skill_gaps)
+        
+        with tab4:
+            render_career_path(recommender, active_profile.current_role or "Analyst", active_target_role)
+            
+        with tab5:
+            render_market_insights(recommender)
+    else:
+        st.info("👈 Please fill in your profile in the sidebar and click 'Get Recommendations' to start.")
 
 
 
