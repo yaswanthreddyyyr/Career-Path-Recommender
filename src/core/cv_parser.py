@@ -23,6 +23,8 @@ class CareerResumeParser:
             "phd": "PhD",
             "doctorate": "PhD",
             "master": "Master's Degree",
+            "masters": "Master's Degree",
+            "master's": "Master's Degree",
             "m.sc": "Master's Degree",
             "m.tech": "Master's Degree",
             "mba": "Master's Degree",
@@ -108,16 +110,31 @@ class CareerResumeParser:
         text_lower = text.lower()
         
         # Priority order: PhD > Master > Bachelor
-        for keyword in ["phd", "doctorate"]:
-            if keyword in text_lower:
+        
+        # PhD patterns
+        phd_patterns = [r'\bphd\b', r'\bdoctorate\b', r'\bdoctor of philosophy\b', r'\bdr\.\s']
+        for pattern in phd_patterns:
+            if re.search(pattern, text_lower):
                 return "PhD"
                 
-        for keyword in ["master", "m.sc", "m.tech", "mba", "postgraduate", "m.a"]:
-            if keyword in text_lower:
+        # Master patterns
+        master_patterns = [
+            r'\bmaster\b', r'\bm\.?sc\b', r'\bm\.?tech\b', r'\bmba\b', 
+            r'\bpostgraduate\b', r'\bm\.?a\b', r'\bm\.?s\b', r'\bm\.?eng\b',
+            r'\bm\.?phil\b'
+        ]
+        for pattern in master_patterns:
+            if re.search(pattern, text_lower):
                 return "Master's Degree"
                 
-        for keyword in ["bachelor", "b.sc", "b.tech", "b.e", "engineer", "undergraduate", "b.a"]:
-            if keyword in text_lower:
+        # Bachelor patterns
+        bachelor_patterns = [
+            r'\bbachelor\b', r'\bb\.?sc\b', r'\bb\.?tech\b', r'\bb\.?e\b', 
+            r'\bundergraduate\b', r'\bb\.?a\b', r'\bb\.?s\b', r'\bbs\b', 
+            r'\bb\.?eng\b', r'\bb\.?com\b'
+        ]
+        for pattern in bachelor_patterns:
+            if re.search(pattern, text_lower):
                 return "Bachelor's Degree"
             
         return "Other"

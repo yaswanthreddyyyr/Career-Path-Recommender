@@ -125,3 +125,4 @@ class SkillGapRequest(BaseModel):
     profile: UserProfile = Field(..., description="User profile with current skills")
     target_role: str = Field(..., description="Target role to analyze gaps for")
 
+
