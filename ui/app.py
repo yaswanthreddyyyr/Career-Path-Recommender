@@ -19,6 +19,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.core.recommender import CareerRecommender, get_recommender
+from src.core.cv_parser import CareerResumeParser
 from src.models.schemas import UserProfile
 
 
@@ -107,11 +108,56 @@ def render_sidebar():
     """Render the sidebar with user profile input."""
     st.sidebar.header("Your Profile")
     
+    # Initialize defaults
+    default_skills = "Python, Machine Learning, SQL, Data Analysis"
+    default_role = "Data Analyst"
+    default_edu_index = 1  # Bachelor's Degree
+    default_experience = 3
+    
+    # Resume Upload
+    uploaded_file = st.sidebar.file_uploader(
+        "Upload Resume (PDF, DOCX, TXT)", 
+        type=["pdf", "docx", "txt"],
+        help="Upload your resume to auto-fill your profile"
+    )
+    
+    if uploaded_file:
+        try:
+            parser = CareerResumeParser()
+            with st.spinner("Parsing resume..."):
+                # Save parsed profile in session state to persist
+                if "parsed_profile" not in st.session_state or st.session_state.get("uploaded_file_name") != uploaded_file.name:
+                    st.session_state.parsed_profile = parser.parse(uploaded_file, uploaded_file.name)
+                    st.session_state.uploaded_file_name = uploaded_file.name
+                    st.sidebar.success("Resume parsed successfully!")
+            
+            parsed = st.session_state.parsed_profile
+            
+            # Update defaults if parsed data exists
+            if parsed.skills:
+                default_skills = ", ".join(parsed.skills)
+            
+            if parsed.experience_years > 0:
+                default_experience = parsed.experience_years
+                
+            if parsed.education:
+                if "PhD" in parsed.education:
+                    default_edu_index = 3
+                elif "Master" in parsed.education:
+                    default_edu_index = 2
+                elif "Bachelor" in parsed.education:
+                    default_edu_index = 1
+                else:
+                    default_edu_index = 4 # Other
+                    
+        except Exception as e:
+            st.sidebar.error(f"Error parsing resume: {str(e)}")
+    
     # Skills input
     st.sidebar.subheader("Skills")
     skills_input = st.sidebar.text_area(
         "Enter your skills (comma-separated)",
-        value="Python, Machine Learning, SQL, Data Analysis",
+        value=default_skills,
         height=100,
         help="List your technical and soft skills"
     )
@@ -120,15 +166,16 @@ def render_sidebar():
     # Current role
     current_role = st.sidebar.text_input(
         "Current Role",
-        value="Data Analyst",
+        value=default_role,
         help="Your current job title"
     )
     
     # Education
+    education_options = ["High School", "Bachelor's Degree", "Master's Degree", "PhD", "Other"]
     education = st.sidebar.selectbox(
         "Education Level",
-        ["High School", "Bachelor's Degree", "Master's Degree", "PhD", "Other"],
-        index=1
+        education_options,
+        index=default_edu_index
     )
     
     # Experience
@@ -136,7 +183,7 @@ def render_sidebar():
         "Years of Experience",
         min_value=0,
         max_value=20,
-        value=3,
+        value=default_experience,
         help="Total years of professional experience"
     )
     
@@ -538,6 +585,10 @@ def main():
         if skill_gaps is None:
             with st.spinner(f"Analyzing skill gaps for {target_role}..."):
                 skill_gaps = recommender.analyze_skill_gaps(profile, target_role)
+            # Check if skill_gaps is still None or empty (could happen if analysis fails or no gaps)
+            if skill_gaps is None:
+                skill_gaps = []
+                
         render_course_recommendations(recommender, skill_gaps)
     
     with tab4:
@@ -545,7 +596,7 @@ def main():
         
     with tab5:
         render_market_insights(recommender)
-    
+
 
 
 

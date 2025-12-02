@@ -4,6 +4,7 @@ from .similarity import SimilaritySearch
 from .recommender import CareerRecommender
 from .hybrid_search import HybridSearch, BM25, SkillNormalizer, QueryExpander
 from .reranker import CrossEncoderReranker, TFIDFSkillWeighter, DiversityReranker
+from .cv_parser import CareerResumeParser
 
 __all__ = [
     "EmbeddingEngine",
@@ -16,5 +17,5 @@ __all__ = [
     "CrossEncoderReranker",
     "TFIDFSkillWeighter",
     "DiversityReranker",
+    "CareerResumeParser",
 ]
-
