@@ -599,10 +599,11 @@ def main():
         active_target_role = st.session_state.submitted_target_role
 
         # Main content tabs
-        tab1, tab2, tab3,  tab5 = st.tabs([
+        tab1, tab2, tab3, tab5 = st.tabs([
             "Job Recommendations",
             "Skill Gap Analysis",
             "Course Recommendations",
+            # "Career Path",
             "Market Insights"
         ])
         
@@ -624,8 +625,8 @@ def main():
                     
             render_course_recommendations(recommender, skill_gaps)
         
-        with tab4:
-            render_career_path(recommender, active_profile.current_role or "Analyst", active_target_role)
+        # with tab4:
+        #     render_career_path(recommender, active_profile.current_role or "Analyst", active_target_role)
             
         with tab5:
             render_market_insights(recommender)
